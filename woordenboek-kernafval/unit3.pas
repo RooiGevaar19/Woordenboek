@@ -57,8 +57,8 @@ procedure TFormEdit.ButtonAcceptClick(Sender: TObject);
 var
    query : String;
 begin
-     if mrOK=MessageDlg('Are you sure you want to edit this record?',mtConfirmation,[mbOK,mbCancel],0) then
-     begin
+     //if mrOK=MessageDlg('Are you sure you want to edit this record?',mtConfirmation,[mbOK,mbCancel],0) then
+     //begin
           Form1.SQLTransaction1.Active := False;
           Form1.SQLTransaction1.Active := True;
           query := 'UPDATE woord SET woord_en = '+QuotedStr(EditEN.Caption)+', woord_fl = '+QuotedStr(EditFL.Caption)+', beschrijving = '+QuotedStr(EditNotes.Caption)+' WHERE id_woord='+IntToStr(id)+';';
@@ -69,7 +69,7 @@ begin
           Form1.SQLQuery2.ExecSQL;
           Form1.SQLTransaction1.Commit;
           Form1.SQLQuery2.Close;
-          showmessage('Gewijzigd!');
+          showmessage('Changed successfully!');
 
           Form1.SQLQuery1.Close;
           Form1.SQLQuery1.SQL.Text := 'SELECT id_woord AS ''ID'', woord_en AS ''English Translation'', woord_fl AS ''Conlang Translation'', beschrijving AS ''Notes'' FROM woord';
@@ -77,7 +77,7 @@ begin
           Form1.SQLTransaction1.Active := True;
           Form1.SQLQuery1.Open;
           Close;
-     end;
+     //end;
 end;
 
 procedure TFormEdit.FormActivate(Sender: TObject);
