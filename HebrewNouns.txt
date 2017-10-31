@@ -32,3 +32,10 @@ Muslim	מוסלמי	noun
 luck	מזל	noun
 happiness	שמחה	noun
 beauty	יופי	noun
+man	איש	noun
+woman	אישה	noun
+father	אבא	noun
+mother	אמא	noun
+son	בן	noun
+daughter	בת	noun
+family	משפחה	noun
