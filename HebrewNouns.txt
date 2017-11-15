@@ -20,9 +20,6 @@ fire	אש	noun
 land	ערץ	noun
 place	מקום	noun
 time	זמן	noun
-Israel	ישראל	noun
-Palestine	פלסטין	noun	
-Poland	פולין	noun
 work	עבודה	noun
 home	בית	noun
 freedom	חופש	noun
