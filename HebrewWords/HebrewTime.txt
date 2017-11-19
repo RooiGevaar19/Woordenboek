@@ -1,0 +1,18 @@
+day	יום	noun, time
+night	לילה	noun, time
+morning	בוקר	noun, time
+evening	ערב	noun, time
+time	זמן	noun, time
+second	שניה	noun, time
+minute	דקה	noun, time
+hour	שעה	noun, time
+week	שבוע	noun, time
+month	חודש	noun, time
+year	שנה	noun, time
+Monday	יום שני	noun, time
+Tuesday	יום שלישי	noun, time
+Wednesday	יום רביעי	noun, time
+Thursday	יום חמישי	noun, time
+Friday	יום שישי	noun, time
+Saturday	שבת	noun, time
+Sunday	יום ראשון	noun, time
