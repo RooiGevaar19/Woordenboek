@@ -9,10 +9,22 @@ hour	שעה	noun, time
 week	שבוע	noun, time
 month	חודש	noun, time
 year	שנה	noun, time
-Monday	יום שני	noun, time
-Tuesday	יום שלישי	noun, time
-Wednesday	יום רביעי	noun, time
-Thursday	יום חמישי	noun, time
-Friday	יום שישי	noun, time
-Saturday	שבת	noun, time
-Sunday	יום ראשון	noun, time
+Monday	יום שני	noun, date, week
+Tuesday	יום שלישי	noun, date, week
+Wednesday	יום רביעי	noun, date, week
+Thursday	יום חמישי	noun, date, week
+Friday	יום שישי	noun, date, week
+Saturday	שבת	noun, date, week
+Sunday	יום ראשון	noun, date, week
+January	ינואר	noun, date, month
+February	פברואר	noun, date, month
+March	מרץ	noun, date, month
+April	אפריל	noun, date, month
+May	מאי	noun, date, month
+June	יוני	noun, date, month
+July	יולי	noun, date, month
+August	אוגוסט	noun, date, month
+September	ספטמבר	noun, date, month
+October	אוקטובר	noun, date, month
+November	נובמבר	noun, date, month
+December	דצמבר	noun, date, month
