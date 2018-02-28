@@ -1,17 +1,17 @@
 object Form1: TForm1
   Left = 1114
-  Height = 480
+  Height = 556
   Top = 311
   Width = 640
   Caption = 'English-Conlang Dictionary [EN]'
-  ClientHeight = 457
+  ClientHeight = 533
   ClientWidth = 640
   Menu = MainMenu1
   OnCreate = FormCreate
   LCLVersion = '1.6.0.4'
   object DBGrid1: TDBGrid
     Left = 8
-    Height = 336
+    Height = 380
     Top = 8
     Width = 624
     Anchors = [akTop, akLeft, akRight, akBottom]
@@ -20,17 +20,16 @@ object Form1: TForm1
     Columns = <>
     DataSource = DataSource1
     Font.Height = 14
-    Options = [dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgDisableDelete]
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgMultiselect, dgDisableDelete]
     ParentFont = False
     Scrollbars = ssAutoVertical
     TabOrder = 0
     TitleFont.Height = 14
-    OnCellClick = DBGrid1CellClick
   end
   object Edit1: TEdit
     Left = 88
     Height = 27
-    Top = 352
+    Top = 424
     Width = 264
     Anchors = [akLeft, akRight, akBottom]
     TabOrder = 1
@@ -39,7 +38,7 @@ object Form1: TForm1
   object Label1: TLabel
     Left = 8
     Height = 21
-    Top = 360
+    Top = 430
     Width = 60
     Anchors = [akLeft, akBottom]
     Caption = 'Search'
@@ -50,7 +49,7 @@ object Form1: TForm1
   object ButtonFindEN: TButton
     Left = 360
     Height = 25
-    Top = 354
+    Top = 426
     Width = 133
     Anchors = [akRight, akBottom]
     Caption = 'Search EN'
@@ -60,7 +59,7 @@ object Form1: TForm1
   object ButtonFindFL: TButton
     Left = 496
     Height = 25
-    Top = 354
+    Top = 426
     Width = 133
     Anchors = [akRight, akBottom]
     Caption = 'Search Conlang'
@@ -70,7 +69,7 @@ object Form1: TForm1
   object ButtonFindEN1: TButton
     Left = 360
     Height = 25
-    Top = 382
+    Top = 454
     Width = 133
     Anchors = [akRight, akBottom]
     Caption = 'Show all'
@@ -78,10 +77,11 @@ object Form1: TForm1
     TabOrder = 4
   end
   object DBGrid2: TDBGrid
-    Left = 304
+    Left = 136
     Height = 36
-    Top = 408
+    Top = 486
     Width = 32
+    Anchors = [akLeft, akBottom]
     Color = clWindow
     Columns = <>
     DataSource = DataSource3
@@ -91,12 +91,40 @@ object Form1: TForm1
   object ButtonFindFL1: TButton
     Left = 496
     Height = 25
-    Top = 382
+    Top = 454
     Width = 133
     Anchors = [akRight, akBottom]
     Caption = 'Soek Notes'
     OnClick = ButtonFindFL1Click
     TabOrder = 6
+  end
+  object ButtonAddEntry: TButton
+    Left = 8
+    Height = 25
+    Top = 392
+    Width = 200
+    Anchors = [akLeft, akBottom]
+    Caption = 'Add a new entry'
+    OnClick = ButtonAddEntryClick
+    TabOrder = 7
+  end
+  object ButtonEditEntry: TButton
+    Left = 212
+    Height = 25
+    Top = 392
+    Width = 208
+    Anchors = [akRight, akBottom]
+    Caption = 'Edit selected entries'
+    TabOrder = 8
+  end
+  object ButtonRemoveEntry: TButton
+    Left = 424
+    Height = 25
+    Top = 392
+    Width = 208
+    Anchors = [akRight, akBottom]
+    Caption = 'Remove selected entries'
+    TabOrder = 9
   end
   object SQLQuery1: TSQLQuery
     FieldDefs = <>
@@ -105,14 +133,14 @@ object Form1: TForm1
     Options = []
     Params = <>
     left = 608
-    top = 416
+    top = 484
   end
   object SQLTransaction1: TSQLTransaction
     Active = False
     Database = DBConnection
     Options = []
     left = 576
-    top = 416
+    top = 484
   end
   object DBConnection: TSQLite3Connection
     Connected = True
@@ -122,16 +150,16 @@ object Form1: TForm1
     Transaction = SQLTransaction1
     Options = []
     left = 512
-    top = 416
+    top = 484
   end
   object DataSource1: TDataSource
     DataSet = SQLQuery1
     left = 544
-    top = 416
+    top = 484
   end
   object MainMenu1: TMainMenu
     left = 480
-    top = 416
+    top = 484
     object MenuItem1: TMenuItem
       Caption = 'Application'
       OnClick = MenuItem1Click
@@ -163,7 +191,7 @@ object Form1: TForm1
   end
   object OpenDialog1: TOpenDialog
     left = 448
-    top = 416
+    top = 484
   end
   object SQLQuery2: TSQLQuery
     FieldDefs = <>
@@ -171,18 +199,18 @@ object Form1: TForm1
     Transaction = SQLTransaction1
     Options = []
     Params = <>
-    left = 8
-    top = 424
+    left = 72
+    top = 484
   end
   object DataSource2: TDataSource
     DataSet = SQLQuery2
-    left = 40
-    top = 424
+    left = 104
+    top = 484
   end
   object DataSource3: TDataSource
     DataSet = SQLQuery3
     left = 40
-    top = 392
+    top = 484
   end
   object SQLQuery3: TSQLQuery
     FieldDefs = <>
@@ -191,11 +219,11 @@ object Form1: TForm1
     Options = []
     Params = <>
     left = 8
-    top = 394
+    top = 484
   end
   object PopupMenu1: TPopupMenu
     left = 416
-    top = 416
+    top = 484
     object MenuItem3: TMenuItem
       Caption = 'Edit'
       OnClick = MenuItem3Click

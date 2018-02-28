@@ -6,13 +6,16 @@ interface
 
 uses
   Classes, SysUtils, sqldb, db, sqlite3conn, FileUtil, Forms, Controls,
-  Graphics, Dialogs, DBGrids, StdCtrls, Menus;
+  Graphics, Dialogs, DBGrids, StdCtrls, Menus, DbCtrls;
 
 type
 
   { TForm1 }
 
   TForm1 = class(TForm)
+    ButtonAddEntry: TButton;
+    ButtonEditEntry: TButton;
+    ButtonRemoveEntry: TButton;
     ButtonFindEN: TButton;
     ButtonFindEN1: TButton;
     ButtonFindFL: TButton;
@@ -43,6 +46,7 @@ type
     SQLQuery3: TSQLQuery;
     SQLTransaction1: TSQLTransaction;
     procedure Button1Click(Sender: TObject);
+    procedure ButtonAddEntryClick(Sender: TObject);
     procedure ButtonFindEN1Click(Sender: TObject);
     procedure ButtonFindENClick(Sender: TObject);
     procedure ButtonFindFL1Click(Sender: TObject);
@@ -283,6 +287,11 @@ begin
             SQLTransaction1.Active := True;
             SQLQuery1.Open;
      end;
+end;
+
+procedure TForm1.ButtonAddEntryClick(Sender: TObject);
+begin
+    Form2.ShowModal;
 end;
 
 procedure TForm1.ButtonFindEN1Click(Sender: TObject);
