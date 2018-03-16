@@ -115,6 +115,7 @@ object Form1: TForm1
     Width = 208
     Anchors = [akRight, akBottom]
     Caption = 'Edit selected entries'
+    OnClick = ButtonEditEntryClick
     TabOrder = 8
   end
   object ButtonRemoveEntry: TButton
@@ -124,6 +125,7 @@ object Form1: TForm1
     Width = 208
     Anchors = [akRight, akBottom]
     Caption = 'Remove selected entries'
+    OnClick = ButtonRemoveEntryClick
     TabOrder = 9
   end
   object SQLQuery1: TSQLQuery

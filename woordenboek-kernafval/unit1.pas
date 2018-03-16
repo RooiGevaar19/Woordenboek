@@ -47,10 +47,12 @@ type
     SQLTransaction1: TSQLTransaction;
     procedure Button1Click(Sender: TObject);
     procedure ButtonAddEntryClick(Sender: TObject);
+    procedure ButtonEditEntryClick(Sender: TObject);
     procedure ButtonFindEN1Click(Sender: TObject);
     procedure ButtonFindENClick(Sender: TObject);
     procedure ButtonFindFL1Click(Sender: TObject);
     procedure ButtonFindFLClick(Sender: TObject);
+    procedure ButtonRemoveEntryClick(Sender: TObject);
     procedure DBGrid1CellClick(Column: TColumn);
     procedure FormCreate(Sender: TObject);
     procedure ItemClearClick(Sender: TObject);
@@ -64,7 +66,8 @@ type
     procedure MenuItem5Click(Sender: TObject);
     procedure MenuRebootClick(Sender: TObject);
   private
-    { private declarations }
+    procedure DeleteByID(id : String);
+    procedure ShowDatabase();
   public
     arax       : LongInt;
   end;
@@ -79,6 +82,28 @@ uses Unit2, Unit3;
 {$R *.lfm}
 
 { TForm1 }
+
+procedure TForm1.DeleteByID(id : String);
+var
+   query : String;
+begin
+     query := 'DELETE FROM woord WHERE id_woord='+id+';';
+     SQLQuery1.Close;
+     SQLQuery1.SQL.Text := query;
+     DBConnection.Connected := True;
+     SQLTransaction1.Active := True;
+     SQLQuery1.ExecSQL;
+     SQLTransaction1.Commit;
+     SQLQuery1.Close;
+end;
+
+procedure TForm1.ShowDatabase();
+begin
+     SQLQuery1.SQL.Text := 'SELECT id_woord AS ''ID'', woord_en AS ''English Translation'', woord_fl AS ''Conlang Translation'', beschrijving AS ''Notes'' FROM woord';
+     DBConnection.Connected := True;
+     SQLTransaction1.Active := True;
+     SQLQuery1.Open;
+end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 var
@@ -95,10 +120,7 @@ begin
      SQLTransaction1.Commit;
      SQLQuery1.Close;
 
-     SQLQuery1.SQL.Text := 'SELECT id_woord AS ''ID'', woord_en AS ''English Translation'', woord_fl AS ''Conlang Translation'', beschrijving AS ''Notes'' FROM woord';
-     DBConnection.Connected := True;
-     SQLTransaction1.Active := True;
-     SQLQuery1.Open;
+     ShowDatabase();
 end;
 
 procedure TForm1.ItemClearClick(Sender: TObject);
@@ -116,10 +138,7 @@ begin
           SQLTransaction1.Commit;
           SQLQuery1.Close;
 
-          SQLQuery1.SQL.Text := 'SELECT id_woord AS ''ID'', woord_en AS ''English Translation'', woord_fl AS ''Conlang Translation'', beschrijving AS ''Notes'' FROM woord';
-          DBConnection.Connected := True;
-          SQLTransaction1.Active := True;
-          SQLQuery1.Open;
+          ShowDatabase();
      end;
 end;
 
@@ -175,10 +194,7 @@ begin
                end;
           end;
           closefile(fp);
-          SQLQuery1.SQL.Text := 'SELECT id_woord AS ''ID'', woord_en AS ''English Translation'', woord_fl AS ''Conlang Translation'', beschrijving AS ''Notes'' FROM woord';
-          DBConnection.Connected := True;
-          SQLTransaction1.Active := True;
-          SQLQuery1.Open;
+          ShowDatabase();
           ShowMessage('Added successfully!');
      end;
 end;
@@ -224,10 +240,7 @@ begin
             SQLTransaction1.Commit;
             SQLQuery1.Close;
 
-            SQLQuery1.SQL.Text := 'SELECT id_woord AS ''ID'', woord_en AS ''English Translation'', woord_fl AS ''Conlang Translation'', beschrijving AS ''Notes'' FROM woord';
-            DBConnection.Connected := True;
-            SQLTransaction1.Active := True;
-            SQLQuery1.Open;
+            ShowDatabase();
      end;
 end;
 
@@ -260,10 +273,7 @@ begin
             SQLTransaction1.Commit;
             SQLQuery1.Close;
 
-            SQLQuery1.SQL.Text := 'SELECT id_woord AS ''ID'', woord_en AS ''English Translation'', woord_fl AS ''Conlang Translation'', beschrijving AS ''Notes'' FROM woord';
-            DBConnection.Connected := True;
-            SQLTransaction1.Active := True;
-            SQLQuery1.Open;
+            ShowDatabase();
      end;
 end;
 
@@ -282,16 +292,29 @@ begin
             SQLTransaction1.Commit;
             SQLQuery1.Close;
 
-            SQLQuery1.SQL.Text := 'SELECT id_woord AS ''ID'', woord_en AS ''English Translation'', woord_fl AS ''Conlang Translation'', beschrijving AS ''Notes'' FROM woord';
-            DBConnection.Connected := True;
-            SQLTransaction1.Active := True;
-            SQLQuery1.Open;
+            ShowDatabase();
      end;
 end;
 
 procedure TForm1.ButtonAddEntryClick(Sender: TObject);
 begin
     Form2.ShowModal;
+end;
+
+procedure TForm1.ButtonEditEntryClick(Sender: TObject);
+var
+   i : Integer;
+begin
+     with SQLQuery1 do
+     begin
+     for i := 0 to DBGrid1.SelectedRows.Count - 1 do
+     begin
+          GotoBookmark(Pointer(DBGrid1.SelectedRows.Items[i]));
+          FormEdit.id := Fields[0].AsInteger;
+          FormEdit.ShowModal;
+          if i <> DBGrid1.SelectedRows.Count - 1 then Next;
+     end;
+end;
 end;
 
 procedure TForm1.ButtonFindEN1Click(Sender: TObject);
@@ -338,6 +361,35 @@ begin
      DBConnection.Connected := True;
      SQLTransaction1.Active := True;
      SQLQuery1.Open;
+end;
+
+procedure TForm1.ButtonRemoveEntryClick(Sender: TObject);
+var
+   i     : Integer;
+   j     : String;
+   itemz : TStringList;
+begin
+     if mrOK=MessageDlg('Are you sure you want to delete these records?',mtConfirmation,[mbOK,mbCancel],0) then
+     begin
+          itemz := TStringList.Create;
+          with SQLQuery1 do
+          begin
+               for i := 0 to DBGrid1.SelectedRows.Count - 1 do
+               begin
+                    GotoBookmark(Pointer(DBGrid1.SelectedRows.Items[i]));
+                    itemz.Add(Fields[0].AsString);
+                    Next;
+               end;
+               for j in itemz do
+               begin
+                    //ShowMessage(j);
+                    DeleteByID(j);
+               end;
+              ShowDatabase();
+          end;
+
+          itemz.Free;
+     end;
 end;
 
 procedure TForm1.DBGrid1CellClick(Column: TColumn);
