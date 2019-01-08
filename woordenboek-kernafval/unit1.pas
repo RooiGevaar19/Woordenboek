@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, sqldb, db, sqlite3conn, FileUtil, Forms, Controls,
-  Graphics, Dialogs, DBGrids, StdCtrls, Menus, DbCtrls;
+  Graphics, Dialogs, DBGrids, StdCtrls, Menus, DbCtrls, ExtDlgs;
 
 type
 
@@ -45,7 +45,7 @@ type
     SQLQuery2: TSQLQuery;
     SQLQuery3: TSQLQuery;
     SQLTransaction1: TSQLTransaction;
-    procedure Button1Click(Sender: TObject);
+    //procedure Button1Click(Sender: TObject);
     procedure ButtonAddEntryClick(Sender: TObject);
     procedure ButtonEditEntryClick(Sender: TObject);
     procedure ButtonFindEN1Click(Sender: TObject);
@@ -157,45 +157,53 @@ var
 begin
      if OpenDialog1.Execute then
      begin
-          fn := OpenDialog1.Filename;
+          //fn := OpenDialog1.Files[0];
           //ShowMessage(fn);
-          assignfile(fp, fn);
-          reset(fp);
-          while not eof(fp) do
+
+          for fn in OpenDialog1.Files do
           begin
-               //readln(fp, en); readln(fp, fl); readln(fp, notes);
-               readln(fp, S);
-               if (S = '') then continue;
-               //https://forum.lazarus.freepascal.org/index.php?topic=33644.0
-               L:=TStringlist.Create;
                try
-                  L.Delimiter := #9;
-                  L.QuoteChar := '"';
-                  L.StrictDelimiter := true;  // set this to false and the second 'test me' will be separate items! Try it.
-                  L.DelimitedText := S;
-                  //showmessage(S);
-                  en := L.Strings[0];
-                  fl := L.Strings[1];
-                  notes := L.Strings[2];
-                  //showmessage(''+en+' - '+fl+' - '+notes+'');
-                  query := 'INSERT INTO woord (woord_en, woord_fl, beschrijving) VALUES ';
-                  query := query + '(''' + en + ''',''' + fl + ''','''+notes+''')';
-                  //query := 'INSERT INTO woord (woord_en, woord_fl, bescheijving) VALUES (''a'',''b'',''c'')';
-                  SQLQuery1.Close;
-                  SQLQuery1.SQL.Text := query;
-                  DBConnection.Connected := True;
-                  SQLTransaction1.Active := True;
-                  SQLQuery1.ExecSQL;
-                  SQLTransaction1.Commit;
-                  SQLQuery1.Close;
-                  //ShowMessage(concat('',en,' - ',fl,''));
-               finally
-                      L.Free;
+               assignfile(fp, fn);
+               reset(fp);
+               SQLQuery1.Close;
+               while not eof(fp) do
+               begin
+                    readln(fp, S);
+                    if (S = '') then continue;
+                    //https://forum.lazarus.freepascal.org/index.php?topic=33644.0
+                    L := TStringlist.Create;
+                       L.Delimiter := #9;
+                       L.QuoteChar := '"';
+                       L.StrictDelimiter := true;  // set this to false and the second 'test me' will be separate items! Try it.
+                       L.DelimitedText := S;
+                       //showmessage(S);
+                       en := L.Strings[0];
+                       fl := L.Strings[1];
+                       notes := L.Strings[2];
+                       //showmessage(''+en+' - '+fl+' - '+notes+'');
+                       query := 'INSERT INTO woord (woord_en, woord_fl, beschrijving) VALUES ';
+                       query := query + '(''' + en + ''',''' + fl + ''','''+notes+''')';
+                       SQLQuery1.Close;
+                       SQLQuery1.SQL.Text := query;
+                       DBConnection.Connected := True;
+                       SQLTransaction1.Active := True;
+                       SQLQuery1.ExecSQL;
+                       //ShowMessage(concat('',en,' - ',fl,''));
+                    L.Free;
+               end;
+               SQLTransaction1.Commit;
+               SQLQuery1.Close;
+               closefile(fp);
+               except
+                     on E : Exception do
+                     begin
+                          SQLTransaction1.Rollback;
+                          ShowMessage('An error occurred on '+S+'.');
+                     end;
                end;
           end;
-          closefile(fp);
           ShowDatabase();
-          ShowMessage('Added successfully!');
+          ShowMessage('Finished!');
      end;
 end;
 
@@ -277,7 +285,7 @@ begin
      end;
 end;
 
-procedure TForm1.Button1Click(Sender: TObject);
+{*procedure TForm1.Button1Click(Sender: TObject);
 var
    query : String;
 begin
@@ -294,12 +302,13 @@ begin
 
             ShowDatabase();
      end;
-end;
+end;*}
 
 procedure TForm1.ButtonAddEntryClick(Sender: TObject);
 begin
     Form2.ShowModal;
 end;
+
 
 procedure TForm1.ButtonEditEntryClick(Sender: TObject);
 var

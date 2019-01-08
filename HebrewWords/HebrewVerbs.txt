@@ -1,0 +1,29 @@
+be	להיות	verb
+do	לעשות	verb
+win	לנצח	verb
+sing	לשיר	verb
+drink	לשתות	verb
+eat	לאכול	verb
+go	ללכת	verb
+think	לחשוב	verb
+remember	לזכור	verb
+talk	לדבר	verb
+say	לאמור	verb
+tell	להגיד	verb
+scream	לצעוק	verb
+hear	לשמוע	verb
+listen	להקשיב	verb
+speak	לדבר	verb
+know	לדעת	verb
+continue	להמשיך	verb
+stop	להספיק	verb, <stop doing smth>
+miss	לנתגעגע	verb, <miss smn>
+be interested	להתניין	verb
+want	לרצות	verb
+must	לחייבת	verb
+give	לתת	verb
+sit	לשבת	verb
+pray	להתפלל	verb
+sleep	לישון	verb
+see	לראות	verb
+believe	להאמין	verb

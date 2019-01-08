@@ -1,17 +1,17 @@
 object Form1: TForm1
-  Left = 1114
+  Left = 748
   Height = 556
-  Top = 311
+  Top = 161
   Width = 640
   Caption = 'English-Conlang Dictionary [EN]'
-  ClientHeight = 533
+  ClientHeight = 532
   ClientWidth = 640
   Menu = MainMenu1
   OnCreate = FormCreate
   LCLVersion = '1.6.0.4'
   object DBGrid1: TDBGrid
     Left = 8
-    Height = 380
+    Height = 379
     Top = 8
     Width = 624
     Anchors = [akTop, akLeft, akRight, akBottom]
@@ -28,8 +28,8 @@ object Form1: TForm1
   end
   object Edit1: TEdit
     Left = 88
-    Height = 27
-    Top = 424
+    Height = 28
+    Top = 422
     Width = 264
     Anchors = [akLeft, akRight, akBottom]
     TabOrder = 1
@@ -37,8 +37,8 @@ object Form1: TForm1
   end
   object Label1: TLabel
     Left = 8
-    Height = 21
-    Top = 430
+    Height = 23
+    Top = 427
     Width = 60
     Anchors = [akLeft, akBottom]
     Caption = 'Search'
@@ -49,7 +49,7 @@ object Form1: TForm1
   object ButtonFindEN: TButton
     Left = 360
     Height = 25
-    Top = 426
+    Top = 425
     Width = 133
     Anchors = [akRight, akBottom]
     Caption = 'Search EN'
@@ -59,7 +59,7 @@ object Form1: TForm1
   object ButtonFindFL: TButton
     Left = 496
     Height = 25
-    Top = 426
+    Top = 425
     Width = 133
     Anchors = [akRight, akBottom]
     Caption = 'Search Conlang'
@@ -69,7 +69,7 @@ object Form1: TForm1
   object ButtonFindEN1: TButton
     Left = 360
     Height = 25
-    Top = 454
+    Top = 453
     Width = 133
     Anchors = [akRight, akBottom]
     Caption = 'Show all'
@@ -79,7 +79,7 @@ object Form1: TForm1
   object DBGrid2: TDBGrid
     Left = 136
     Height = 36
-    Top = 486
+    Top = 485
     Width = 32
     Anchors = [akLeft, akBottom]
     Color = clWindow
@@ -91,17 +91,17 @@ object Form1: TForm1
   object ButtonFindFL1: TButton
     Left = 496
     Height = 25
-    Top = 454
+    Top = 453
     Width = 133
     Anchors = [akRight, akBottom]
-    Caption = 'Soek Notes'
+    Caption = 'Search Notes'
     OnClick = ButtonFindFL1Click
     TabOrder = 6
   end
   object ButtonAddEntry: TButton
     Left = 8
     Height = 25
-    Top = 392
+    Top = 391
     Width = 200
     Anchors = [akLeft, akBottom]
     Caption = 'Add a new entry'
@@ -111,7 +111,7 @@ object Form1: TForm1
   object ButtonEditEntry: TButton
     Left = 212
     Height = 25
-    Top = 392
+    Top = 391
     Width = 208
     Anchors = [akRight, akBottom]
     Caption = 'Edit selected entries'
@@ -121,7 +121,7 @@ object Form1: TForm1
   object ButtonRemoveEntry: TButton
     Left = 424
     Height = 25
-    Top = 392
+    Top = 391
     Width = 208
     Anchors = [akRight, akBottom]
     Caption = 'Remove selected entries'
@@ -167,6 +167,7 @@ object Form1: TForm1
       OnClick = MenuItem1Click
       object ItemExit: TMenuItem
         Caption = 'Quit'
+        ShortCut = 16465
         OnClick = ItemExitClick
       end
     end
@@ -192,6 +193,7 @@ object Form1: TForm1
     end
   end
   object OpenDialog1: TOpenDialog
+    Options = [ofAllowMultiSelect, ofEnableSizing, ofViewDetail]
     left = 448
     top = 484
   end

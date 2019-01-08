@@ -2,6 +2,7 @@ day	יום	noun, time
 night	לילה	noun, time
 morning	בוקר	noun, time
 evening	ערב	noun, time
+noon	צהריים	noun, time
 time	זמן	noun, time
 second	שניה	noun, time
 minute	דקה	noun, time
@@ -9,6 +10,7 @@ hour	שעה	noun, time
 week	שבוע	noun, time
 month	חודש	noun, time
 year	שנה	noun, time
+moment	רגע	noun, time
 Monday	יום שני	noun, date, week
 Tuesday	יום שלישי	noun, date, week
 Wednesday	יום רביעי	noun, date, week
