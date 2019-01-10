@@ -16,8 +16,8 @@ listen	להקשיב	verb
 speak	לדבר	verb
 know	לדעת	verb
 continue	להמשיך	verb
-stop	להספיק	verb, <stop doing smth>
-miss	לנתגעגע	verb, <miss smn>
+stop	להספיק	verb, [stop doing smth]
+miss	לנתגעגע	verb, [miss smn]
 be interested	להתניין	verb
 want	לרצות	verb
 must	לחייבת	verb
@@ -27,3 +27,9 @@ pray	להתפלל	verb
 sleep	לישון	verb
 see	לראות	verb
 believe	להאמין	verb
+move	להזיז	verb
+visit	לבקר	verb
+use	להשתמש	verb
+return	להחזיר	verb
+realise	להתמודד	verb
+regret	להצטער	verb

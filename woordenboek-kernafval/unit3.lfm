@@ -1,7 +1,7 @@
 object FormEdit: TFormEdit
-  Left = 1133
+  Left = 678
   Height = 200
-  Top = 360
+  Top = 308
   Width = 480
   Caption = 'Edit a record'
   ClientHeight = 200
@@ -36,7 +36,7 @@ object FormEdit: TFormEdit
   end
   object Label1: TLabel
     Left = 17
-    Height = 20
+    Height = 21
     Top = 64
     Width = 59
     Caption = 'English'
@@ -46,7 +46,7 @@ object FormEdit: TFormEdit
   end
   object Label2: TLabel
     Left = 17
-    Height = 20
+    Height = 21
     Top = 92
     Width = 70
     Caption = 'Conlang'
@@ -56,7 +56,7 @@ object FormEdit: TFormEdit
   end
   object EditEN: TEdit
     Left = 113
-    Height = 27
+    Height = 28
     Top = 56
     Width = 351
     Anchors = [akTop, akLeft, akRight]
@@ -66,7 +66,7 @@ object FormEdit: TFormEdit
   end
   object EditFL: TEdit
     Left = 113
-    Height = 27
+    Height = 28
     Top = 84
     Width = 351
     Anchors = [akTop, akLeft, akRight]
@@ -76,7 +76,7 @@ object FormEdit: TFormEdit
   end
   object Label3: TLabel
     Left = 17
-    Height = 20
+    Height = 21
     Top = 120
     Width = 47
     Caption = 'Notes'
@@ -86,7 +86,7 @@ object FormEdit: TFormEdit
   end
   object EditNotes: TEdit
     Left = 113
-    Height = 27
+    Height = 28
     Top = 112
     Width = 351
     Anchors = [akTop, akLeft, akRight]
@@ -96,7 +96,7 @@ object FormEdit: TFormEdit
   end
   object Label4: TLabel
     Left = 17
-    Height = 20
+    Height = 21
     Top = 32
     Width = 16
     Caption = 'ID'
@@ -106,7 +106,7 @@ object FormEdit: TFormEdit
   end
   object LabelXD: TLabel
     Left = 113
-    Height = 20
+    Height = 21
     Top = 32
     Width = 16
     Caption = 'ID'

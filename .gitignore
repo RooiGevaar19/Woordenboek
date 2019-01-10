@@ -1,6 +1,8 @@
 *.db
 *.bak
 *.dll
+trash/
 *.old.txt
 FlorianWords/
 woordenboek-kernafval/lib/
+plans.txt

@@ -102,31 +102,41 @@ object Form1: TForm1
     Left = 8
     Height = 25
     Top = 391
-    Width = 200
-    Anchors = [akLeft, akBottom]
+    Width = 154
+    Anchors = [akRight, akBottom]
     Caption = 'Add a new entry'
     OnClick = ButtonAddEntryClick
     TabOrder = 7
   end
   object ButtonEditEntry: TButton
-    Left = 212
+    Left = 288
     Height = 25
     Top = 391
-    Width = 208
+    Width = 154
     Anchors = [akRight, akBottom]
     Caption = 'Edit selected entries'
     OnClick = ButtonEditEntryClick
     TabOrder = 8
   end
   object ButtonRemoveEntry: TButton
-    Left = 424
+    Left = 448
     Height = 25
     Top = 391
-    Width = 208
+    Width = 180
     Anchors = [akRight, akBottom]
     Caption = 'Remove selected entries'
     OnClick = ButtonRemoveEntryClick
     TabOrder = 9
+  end
+  object ButtonSelectAll: TButton
+    Left = 168
+    Height = 25
+    Top = 391
+    Width = 112
+    Anchors = [akTop, akRight]
+    Caption = 'Select All'
+    OnClick = ButtonSelectAllClick
+    TabOrder = 10
   end
   object SQLQuery1: TSQLQuery
     FieldDefs = <>
@@ -186,9 +196,23 @@ object Form1: TForm1
         Caption = 'Add a new entry'
         OnClick = ItemEnterClick
       end
-      object ItemFile: TMenuItem
-        Caption = 'Load from a file'
-        OnClick = ItemFileClick
+      object MenuImport: TMenuItem
+        Caption = 'Import from'
+        object ItemFile: TMenuItem
+          Caption = 'CSV file (tab-separated)'
+          OnClick = ItemFileClick
+        end
+      end
+      object MenuExport: TMenuItem
+        Caption = 'Export to'
+        object MenuExportXML: TMenuItem
+          Caption = 'XML'
+          OnClick = MenuExportXMLClick
+        end
+        object MenuExportCSV: TMenuItem
+          Caption = 'CSV file (tab-separated)'
+          OnClick = MenuExportCSVClick
+        end
       end
     end
   end
@@ -240,5 +264,16 @@ object Form1: TForm1
       Caption = 'Cancel'
       OnClick = MenuItem5Click
     end
+  end
+  object ExportCSVDialog: TSaveDialog
+    Title = 'Export to a text file as...'
+    left = 384
+    top = 484
+  end
+  object ExportXMLDialog: TSaveDialog
+    Title = 'Export to XML as'
+    DefaultExt = '.xml'
+    left = 352
+    top = 484
   end
 end

@@ -13,6 +13,7 @@ type
   { TForm1 }
 
   TForm1 = class(TForm)
+    ButtonSelectAll: TButton;
     ButtonAddEntry: TButton;
     ButtonEditEntry: TButton;
     ButtonRemoveEntry: TButton;
@@ -38,14 +39,21 @@ type
     MenuItem3: TMenuItem;
     MenuItem4: TMenuItem;
     MenuItem5: TMenuItem;
+    MenuExportCSV: TMenuItem;
+    MenuExportXML: TMenuItem;
+    MenuExport: TMenuItem;
+    MenuImport: TMenuItem;
     MenuReboot: TMenuItem;
     OpenDialog1: TOpenDialog;
     PopupMenu1: TPopupMenu;
+    ExportCSVDialog: TSaveDialog;
+    ExportXMLDialog: TSaveDialog;
     SQLQuery1: TSQLQuery;
     SQLQuery2: TSQLQuery;
     SQLQuery3: TSQLQuery;
     SQLTransaction1: TSQLTransaction;
     //procedure Button1Click(Sender: TObject);
+    procedure ButtonSelectAllClick(Sender: TObject);
     procedure ButtonAddEntryClick(Sender: TObject);
     procedure ButtonEditEntryClick(Sender: TObject);
     procedure ButtonFindEN1Click(Sender: TObject);
@@ -58,6 +66,8 @@ type
     procedure ItemClearClick(Sender: TObject);
     procedure ItemEnterClick(Sender: TObject);
     procedure ItemFileClick(Sender: TObject);
+    procedure MenuExportCSVClick(Sender: TObject);
+    procedure MenuExportXMLClick(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
     procedure ItemExitClick(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
@@ -207,6 +217,79 @@ begin
      end;
 end;
 
+procedure TForm1.MenuExportCSVClick(Sender: TObject);
+var
+   fn  : String;
+   fp  : Text;
+   str : String;
+begin
+     if ExportCSVDialog.Execute then
+     begin
+          fn := ExportCSVDialog.FileName;
+          //showMessage(fn);
+          //try
+             assignfile(fp, fn);
+             rewrite(fp);
+             SQLQuery1.Close;
+             SQLQuery1.SQL.Text := 'SELECT woord_en, woord_fl, beschrijving FROM woord';
+             DBConnection.Connected := True;
+             SQLTransaction1.Active := True;
+             SQLQuery1.Open;
+             SQLQuery1.First;
+             while not SQLQuery1.EOF do
+             begin
+                  str := SQLQuery1.FieldByName('woord_en').AsString + #9 +
+                         SQLQuery1.FieldByName('woord_fl').AsString + #9 +
+                         SQLQuery1.FieldByName('beschrijving').AsString + #10#13;
+                  write(fp, str);
+                  SQLQuery1.Next;
+             end;
+             closefile(fp);
+          //finally
+          //end;
+
+          SQLQuery1.Close;
+          ShowDatabase();
+          ShowMessage('Finished!');
+     end;
+end;
+
+procedure TForm1.MenuExportXMLClick(Sender: TObject);
+var
+   fn  : String;
+   fp  : Text;
+   str : String;
+begin
+     if ExportXMLDialog.Execute then
+     begin
+          fn := ExportXMLDialog.FileName;
+          assignfile(fp, fn);
+          rewrite(fp);
+          SQLQuery1.Close;
+          SQLQuery1.SQL.Text := 'SELECT woord_en, woord_fl, beschrijving FROM woord';
+          DBConnection.Connected := True;
+          SQLTransaction1.Active := True;
+          SQLQuery1.Open;
+          SQLQuery1.First;
+          writeln(fp, '<dictionary>');
+          while not SQLQuery1.EOF do
+          begin
+               str := #9 + '<entry><english>'+SQLQuery1.FieldByName('woord_en').AsString + '</english>' +
+                   '<translation>' + SQLQuery1.FieldByName('woord_fl').AsString + '</translation>' +
+                   '<description>' + SQLQuery1.FieldByName('beschrijving').AsString + '</description></entry>'
+                   + #10#13;
+               write(fp, str);
+               SQLQuery1.Next;
+          end;
+          writeln(fp, '</dictionary>');
+          closefile(fp);
+
+          SQLQuery1.Close;
+          ShowDatabase();
+          ShowMessage('Finished!');
+     end;
+end;
+
 procedure TForm1.MenuItem1Click(Sender: TObject);
 begin
 
@@ -307,6 +390,19 @@ end;*}
 procedure TForm1.ButtonAddEntryClick(Sender: TObject);
 begin
     Form2.ShowModal;
+end;
+
+procedure TForm1.ButtonSelectAllClick(Sender: TObject);
+var
+   i : Integer;
+begin
+     DBGrid1.SelectedRows.Clear;
+     DataSource1.DataSet.First;
+     for i := 0 to DataSource1.DataSet.RecordCount-1 do
+     begin
+          DBGrid1.SelectedRows.CurrentRowSelected := not DBGrid1.SelectedRows.CurrentRowSelected;
+          DataSource1.DataSet.Next;
+     end;
 end;
 
 
