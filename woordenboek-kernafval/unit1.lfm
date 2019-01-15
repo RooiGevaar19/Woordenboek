@@ -25,6 +25,7 @@ object Form1: TForm1
     Scrollbars = ssAutoVertical
     TabOrder = 0
     TitleFont.Height = 14
+    OnDblClick = DBGrid1DblClick
   end
   object Edit1: TEdit
     Left = 88
@@ -133,7 +134,7 @@ object Form1: TForm1
     Height = 25
     Top = 391
     Width = 112
-    Anchors = [akTop, akRight]
+    Anchors = [akRight, akBottom]
     Caption = 'Select All'
     OnClick = ButtonSelectAllClick
     TabOrder = 10
@@ -198,9 +199,13 @@ object Form1: TForm1
       end
       object MenuImport: TMenuItem
         Caption = 'Import from'
-        object ItemFile: TMenuItem
+        object MenuImportXML: TMenuItem
+          Caption = 'XML '
+          OnClick = MenuImportXMLClick
+        end
+        object MenuImportCSV: TMenuItem
           Caption = 'CSV file (tab-separated)'
-          OnClick = ItemFileClick
+          OnClick = MenuImportCSVClick
         end
       end
       object MenuExport: TMenuItem
@@ -216,7 +221,7 @@ object Form1: TForm1
       end
     end
   end
-  object OpenDialog1: TOpenDialog
+  object ImportCSVDialog: TOpenDialog
     Options = [ofAllowMultiSelect, ofEnableSizing, ofViewDetail]
     left = 448
     top = 484
@@ -250,7 +255,7 @@ object Form1: TForm1
     top = 484
   end
   object PopupMenu1: TPopupMenu
-    left = 416
+    left = 320
     top = 484
     object MenuItem3: TMenuItem
       Caption = 'Edit'
@@ -274,6 +279,13 @@ object Form1: TForm1
     Title = 'Export to XML as'
     DefaultExt = '.xml'
     left = 352
+    top = 484
+  end
+  object ImportXMLDialog: TOpenDialog
+    Title = 'Open XML file(s)'
+    DefaultExt = '.xml'
+    Options = [ofAllowMultiSelect, ofEnableSizing, ofViewDetail]
+    left = 416
     top = 484
   end
 end

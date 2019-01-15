@@ -35,7 +35,7 @@ type
     ItemClear: TMenuItem;
     ItemExit: TMenuItem;
     ItemEnter: TMenuItem;
-    ItemFile: TMenuItem;
+    MenuImportCSV: TMenuItem;
     MenuItem3: TMenuItem;
     MenuItem4: TMenuItem;
     MenuItem5: TMenuItem;
@@ -43,8 +43,10 @@ type
     MenuExportXML: TMenuItem;
     MenuExport: TMenuItem;
     MenuImport: TMenuItem;
+    MenuImportXML: TMenuItem;
     MenuReboot: TMenuItem;
-    OpenDialog1: TOpenDialog;
+    ImportCSVDialog: TOpenDialog;
+    ImportXMLDialog: TOpenDialog;
     PopupMenu1: TPopupMenu;
     ExportCSVDialog: TSaveDialog;
     ExportXMLDialog: TSaveDialog;
@@ -62,12 +64,14 @@ type
     procedure ButtonFindFLClick(Sender: TObject);
     procedure ButtonRemoveEntryClick(Sender: TObject);
     procedure DBGrid1CellClick(Column: TColumn);
+    procedure DBGrid1DblClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure ItemClearClick(Sender: TObject);
     procedure ItemEnterClick(Sender: TObject);
-    procedure ItemFileClick(Sender: TObject);
+    procedure MenuImportCSVClick(Sender: TObject);
     procedure MenuExportCSVClick(Sender: TObject);
     procedure MenuExportXMLClick(Sender: TObject);
+    procedure MenuImportXMLClick(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
     procedure ItemExitClick(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
@@ -87,7 +91,8 @@ var
 
 implementation
 
-uses Unit2, Unit3;
+uses Unit2, Unit3,
+  XMLRead, XMLWrite, DOM;
 
 {$R *.lfm}
 
@@ -157,7 +162,7 @@ begin
      Form2.ShowModal;
 end;
 
-procedure TForm1.ItemFileClick(Sender: TObject);
+procedure TForm1.MenuImportCSVClick(Sender: TObject);
 var
    fp               : text;
    en, fl, notes    : String;
@@ -165,12 +170,12 @@ var
    L                : TStrings;
    S, E             : string;
 begin
-     if OpenDialog1.Execute then
+     if ImportCSVDialog.Execute then
      begin
-          //fn := OpenDialog1.Files[0];
+          //fn := ImportCSVDialog.Files[0];
           //ShowMessage(fn);
 
-          for fn in OpenDialog1.Files do
+          for fn in ImportCSVDialog.Files do
           begin
                try
                assignfile(fp, fn);
@@ -208,7 +213,9 @@ begin
                      on E : Exception do
                      begin
                           SQLTransaction1.Rollback;
-                          ShowMessage('An error occurred on '+S+'.');
+                          ShowMessage('An error occurred on '+#13#10+S+#13#10+'in '+fn+'.');
+                          SQLQuery1.Close;
+                          closefile(fp);
                      end;
                end;
           end;
@@ -274,7 +281,7 @@ begin
           writeln(fp, '<dictionary>');
           while not SQLQuery1.EOF do
           begin
-               str := #9 + '<entry><english>'+SQLQuery1.FieldByName('woord_en').AsString + '</english>' +
+               str := #9 + '<entry><original>'+SQLQuery1.FieldByName('woord_en').AsString + '</original>' +
                    '<translation>' + SQLQuery1.FieldByName('woord_fl').AsString + '</translation>' +
                    '<description>' + SQLQuery1.FieldByName('beschrijving').AsString + '</description></entry>'
                    + #10#13;
@@ -289,6 +296,63 @@ begin
           ShowMessage('Finished!');
      end;
 end;
+
+procedure TForm1.MenuImportXMLClick(Sender: TObject);
+var
+   fp               : text;
+   en, fl, notes    : String;
+   query, fn        : String;
+   L                : TStrings;
+   S, E             : string;
+   PassNode         : TDOMNode;
+   Doc              : TXMLDocument;
+   Child            : TDOMNode;
+begin
+     if ImportXMLDialog.Execute then
+     begin
+          for fn in ImportXMLDialog.Files do
+          begin
+               try
+               SQLQuery1.Close;
+               ReadXMLFile(Doc, fn);
+               Child := Doc.DocumentElement.FirstChild;
+               while Assigned(Child) do
+               begin
+                    with Child.ChildNodes do
+                    try
+                       en := Item[0].FirstChild.NodeValue;
+                       fl := Item[1].FirstChild.NodeValue;
+                       notes := Item[2].FirstChild.NodeValue;
+                    finally
+                           Free;
+                    end;
+                    query := 'INSERT INTO woord (woord_en, woord_fl, beschrijving) VALUES ';
+                    query := query + '(''' + en + ''',''' + fl + ''','''+notes+''')';
+                    SQLQuery1.Close;
+                    SQLQuery1.SQL.Text := query;
+                    DBConnection.Connected := True;
+                    SQLTransaction1.Active := True;
+                    SQLQuery1.ExecSQL;
+                    Child := Child.NextSibling;
+               end;
+               SQLTransaction1.Commit;
+               SQLQuery1.Close;
+               Doc.Free;
+               except
+                     on E : Exception do
+                     begin
+                          SQLTransaction1.Rollback;
+                          ShowMessage('An error occurred on '+#13#10+S+#13#10+'in '+fn+'.');
+                          SQLQuery1.Close;
+                          Doc.Free;
+                     end;
+               end;
+          end;
+          ShowDatabase();
+          ShowMessage('Finished!');
+     end;
+end;
+
 
 procedure TForm1.MenuItem1Click(Sender: TObject);
 begin
@@ -311,27 +375,44 @@ begin
 end;
 
 procedure TForm1.MenuItem3Click(Sender: TObject);
+var
+   i     : Integer;
 begin
-     FormEdit.id := arax;
-     FormEdit.ShowModal;
+     with SQLQuery1 do
+     for i := 0 to DBGrid1.SelectedRows.Count - 1 do
+     begin
+          GotoBookmark(Pointer(DBGrid1.SelectedRows.Items[i]));
+          FormEdit.id := Fields[0].AsInteger;
+          FormEdit.ShowModal;
+          if i <> DBGrid1.SelectedRows.Count - 1 then Next;
+     end;
 end;
 
 procedure TForm1.MenuItem4Click(Sender: TObject);
 var
-   query : String;
+   i     : Integer;
+   j     : String;
+   itemz : TStringList;
 begin
-     if mrOK=MessageDlg('Are you sure you want to delete this record?',mtConfirmation,[mbOK,mbCancel],0) then
+     if mrOK=MessageDlg('Are you sure you want to delete these records?',mtConfirmation,[mbOK,mbCancel],0) then
      begin
-            query := 'DELETE FROM woord WHERE id_woord='+IntToStr(arax)+';';
-            SQLQuery1.Close;
-            SQLQuery1.SQL.Text := query;
-            DBConnection.Connected := True;
-            SQLTransaction1.Active := True;
-            SQLQuery1.ExecSQL;
-            SQLTransaction1.Commit;
-            SQLQuery1.Close;
-
-            ShowDatabase();
+          itemz := TStringList.Create;
+          with SQLQuery1 do
+          begin
+               for i := 0 to DBGrid1.SelectedRows.Count - 1 do
+               begin
+                    GotoBookmark(Pointer(DBGrid1.SelectedRows.Items[i]));
+                    itemz.Add(Fields[0].AsString);
+                    Next;
+               end;
+               for j in itemz do
+               begin
+                    //ShowMessage(j);
+                    DeleteByID(j);
+               end;
+              ShowDatabase();
+          end;
+          itemz.Free;
      end;
 end;
 
@@ -492,7 +573,6 @@ begin
                end;
               ShowDatabase();
           end;
-
           itemz.Free;
      end;
 end;
@@ -520,6 +600,11 @@ begin
      //showmessage(IntToStr(arax));
      if (arax >= 1) then PopupMenu1.PopUp;
      //FormTrackProperties.ShowModal;
+end;
+
+procedure TForm1.DBGrid1DblClick(Sender: TObject);
+begin
+     PopupMenu1.PopUp;
 end;
 
 end.

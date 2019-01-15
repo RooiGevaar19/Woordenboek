@@ -1,5 +1,0 @@
-luck	מזל	noun, abstract
-happiness	שמחה	noun, abstract
-beauty	יופי	noun, abstract
-pity	חבל	noun, abstract
-freedom	חופש	noun, abstract
