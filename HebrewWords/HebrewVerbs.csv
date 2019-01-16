@@ -1,84 +1,147 @@
+allow	לתת	verb, pa3al
+appear	להיראות	verb, nif3al
+arrest	לעצור	verb, pa3al
 be	להיות	verb, pa3al
+be interested	להתעניין	verb, hitpa3el
+be sorry	להצטער	verb, hitpa3el
+be visible	להיראות	verb, nif3al
+begin	להתחיל	verb, hif3il
+believe	להאמין	verb, hif3il
+call	לקרוא	verb, pa3al, [call someone]
+call	לטלפן	verb, pi3el, [call using telephone]
+close	לסגור	verb, pa3al
+come	לבוא	verb, pa3al
+come back	לחזור	verb, pa3al
+concentrate	להתרכז	verb, hitpa3el
+copy	להעתיק	verb, hif3il
+create	ליצור	verb, pa3al
+cry	לבכות	verb, pa3al
+cut	לחתוך	verb, pa3al
+dance	לרקוד	verb, pa3al
+decline	לסרב	verb, pi3el
+divide	לחלק	verb, pi3el
 do	לעשות	verb, pa3al
-win	לנצח	verb, pi3el
-sing	לשיר	verb, pa3al
+drop	ליפול	verb, pa3al
+dress up	להתלבש	verb, hitpa3el
+continue	להמשיך	verb, hif3il
+deal with	להתמודד	verb, hitpa3el
+delete	למחוק	verb, pa3al
+die	למות	verb, pa3al
 drink	לשתות	verb, pa3al
 eat	לאכול	verb, pa3al
-go	ללכת	verb, pa3al
-think	לחשוב	verb, pa3al
-remember	לזכור	verb, pa3al
-talk	לדבר	verb, pi3el
-say	לומר	verb, pa3al 
-tell	להגיד	verb, hif3il
-shout	לצעוק	verb, pa3al
-hear	לשמוע	verb, pa3al
-listen	להקשיב	verb, hif3il
-speak	לדבר	verb, pi3el
-know	לדעת	verb, pa3al
-continue	להמשיך	verb, hif3il
-stop	להספיק	verb, hif3il, [stop doing smth]
-miss	לנתגעגע	verb, hitpa3el, [miss smn]
-be interested	להתעניין	verb, hitpa3el
-want	לרצות	verb, pa3al
-force	לחיב	verb, pi3el, [force smn to smth]
-give	לתת	verb, pa3al
-allow	לתת	verb, pa3al
-sit	לשבת	verb, pa3al
-pray	להתפלל	verb, hitpa3el
-sleep	לישון	verb, pa3al
-see	לראות	verb, pa3al
-see again	להתראות	verb, hitpa3el
-believe	להאמין	verb, hif3il
-trust	להאמין	verb, hif3il
-move	להזיז	verb, hif3il
-visit	לבקר	verb, pi3el
-use	להשתמש	verb, hitpa3el
-return	להחזיר	verb, hif3il
-deal with	להתמודד	verb, hitpa3el
-regret	להצטער	verb, hitpa3el
-be sorry	להצטער	verb, hitpa3el
-sunbathe	להשתזף	verb, hitpa3el
-dress up	להתלבש	verb, hitpa3el
-read	לקרוא	verb, pa3al
-call	לקרוא	verb, pa3al, [call someone]
-call	לטלפן	verb, pa3al, [call using telephone]
+enable	לאפשר	verb, pi3el
+enter	להיכנס	verb, nif3al
+execute	לבצע	verb, pi3el, [execute smth]
+exit	לצאת	verb, pa3al
 extend	להרחיב	verb, hif3il
-come	לבוא	verb, pa3al
-reach	להגיע	verb, hif3il
-step	לצעוד	verb, pa3al
-cry	לבכות	verb, pa3al
-hang around	להסתובב	verb, hitpa3el
-turn around	להסתובב	verb, hitpa3el
-begin	להתחיל	verb, hif3il
+expect	לצפות	verb, pi3el
+extinguish	לכבות	verb, pi3el
+fail	להיכשל	verb, nif3al
+fall	ליפול	verb, pa3al
+fall in love	להתאהב	verb, hitpa3el
+feel	להרגיש	verb, hif3il
+find	למצוא	verb, pa3al
 finish	לסיים	verb, pi3el
+focus	להתמקד	verb, hitpa3el, [focus on smth]
+force	לחיב	verb, pi3el, [force smn to smth]
+gaze	להסתכל	verb, hitpa3el
+get	לקבל	verb, pi3el
+get out	לצאת	verb, pa3al
+give	לתת	verb, pa3al
+glue	להדביק	verb, hif3il
+go	ללכת	verb, pa3al
+halt	לעצור	verb, pa3al
+hang	לתלות	verb, pa3al
+hang around	להסתובב	verb, hitpa3el
+hear	לשמוע	verb, pa3al
+hide	להתחבא	verb, hitpa3el
+hurt	לכאוב	verb, pa3al
+ignite	להדליק	verb, hif3il
+join	להצטרף	verb, hitpa3el
+jump	לקפוץ	verb, pa3al
+kill	להרוג	verb, pa3al
+know	לדעת	verb, pa3al
+leave	לעזוב	verb, pa3al
+let	לאפשר	verb, pi3el
+let	לתת	verb, pa3al
+listen	להקשיב	verb, hif3il
+live	לחיות	verb, pa3al
+load	לטעון	verb, pa3al
+look	להסתכל	verb, hitpa3el, [look at]
+look	להיראות	verb, nif3al, [look like]
+make	לעשות	verb, pa3al
+make possible	לאפשר	verb, pi3el
 mean	להתכוון	verb, hitpa3el
 meet	להפגש	verb, nif3al
-understand	להבין	verb, hif3il
-realise	להבין	verb, hif3il
-come back	לחזור	verb, pa3al
-save	לשמור	verb, pa3al
-load	לטעון	verb, pa3al
-slash	לחתוך	verb, pa3al
-cut	לחתוך	verb, pa3al
-copy	להעתיק	verb, hif3il
-paste	להדביק	verb, hif3il
-stick	להדביק	verb, hif3il
-glue	להדביק	verb, hif3il
-delete	למחוק	verb, pa3al
-remove	למחוק	verb, pa3al
-dance	לרקוד	verb, pa3al
-jump	לקפוץ	verb, pa3al
-stand	לעמוד	verb, pa3al
-remain	להישאר	verb, nif3al
-pass away	לחלוף	verb, pa3al
+miss	לנתגעגע	verb, hitpa3el, [miss smn]
+miss	להחמיץ	verb, hif3il, [miss e.g. a chance/opportunity]
+move	להזיז	verb, hif3il
 move past	לחלוף	verb, pa3al
-hide	להתחבא	verb, hitpa3el
-show	להציג	verb, hif3il
+obtain	להשיג	verb, hif3il
+open	לפתוח	verb, pa3al
+pass	לעבור	verb, pa3al
+pass away	לחלוף	verb, pa3al
+paste	להדביק	verb, hif3il
+perform	לבצע	verb, pi3el
+play	לשחק	verb, pi3el
+pray	להתפלל	verb, hitpa3el
+predict	לצפות	verb, pa3al
 present	להציג	verb, hif3il
+reach	להגיע	verb, hif3il
+read	לקרוא	verb, pa3al
+realise	להבין	verb, hif3il
+receive	לקבל	verb, pi3el
+recommend	להמליץ	verb, hif3il
+refuse	לסרב	verb, pi3el
+regret	להצטער	verb, hitpa3el
+reject	לסרב	verb, pi3el
+rely	להסתמך	verb, hitpa3el
+remain	להישאר	verb, nif3al
+remember	לזכור	verb, pa3al
+remove	למחוק	verb, pa3al
+return	להחזיר	verb, hif3il
+save	לשמור	verb, pa3al
+say	לומר	verb, pa3al
 search	לחפש	verb, pi3el
 seek	לחפש	verb, pi3el
-find	למצוא	verb, pa3al
-write	לכתוב	verb, pa3al
-open	לפתוח	verb, pa3al
-close	לסגור	verb, pa3al
+see	לראות	verb, pa3al
+see again	להתראות	verb, hitpa3el
+send	לשלוח	verb, pa3al
+share	לשתף	verb, pi3el
+shave	להתגלח	verb, hitpa3el
+shout	לצעוק	verb, pa3al
+show	להציג	verb, hif3il
+shrink	לכווץ	verb, pi3el
 shut	לסגור	verb, pa3al
+sing	לשיר	verb, pa3al
+sit	לשבת	verb, pa3al
+slash	לחתוך	verb, pa3al
+sleep	לישון	verb, pa3al
+speak	לדבר	verb, pi3el
+stand	לעמוד	verb, pa3al
+step	לצעוד	verb, pa3al
+stick	להדביק	verb, hif3il
+stop	להספיק	verb, hif3il, [stop doing smth]
+stop	לעצור	verb, pa3al, [stop smth]
+stumble	להיכשל	verb, nif3al
+sunbathe	להשתזף	verb, hitpa3el
+talk	לדבר	verb, pi3el
+tell	להגיד	verb, hif3il
+think	לחשוב	verb, pa3al
+trust	להאמין	verb, hif3il
+turn	לפנות	verb, pa3al
+turn on	להדליק	verb, hif3il
+turn off	לכבות	verb, pi3el
+turn around	להסתובב	verb, hitpa3el
+understand	להבין	verb, hif3il
+use	להשתמש	verb, hitpa3el
+visit	לבקר	verb, pi3el
+want	לרצות	verb, pa3al
+watch	להסתכל	verb, hitpa3el
+watch	לצפות	verb, pa3al, [e.g. watch TV]
+whisper	ללחוש	verb, pa3al
+wait	לחכות	verb, pi3el
+warn	להזהיר	verb, hif3il
+win	לנצח	verb, pi3el
+work	לעבוד	verb, pa3al
+write	לכתוב	verb, pa3al
