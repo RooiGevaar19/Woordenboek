@@ -46,6 +46,7 @@ object Form1: TForm1
     Font.Height = 19
     ParentColor = False
     ParentFont = False
+    OnClick = Label1Click
   end
   object ButtonFindEN: TButton
     Left = 360
@@ -207,6 +208,10 @@ object Form1: TForm1
           Caption = 'CSV file (tab-separated)'
           OnClick = MenuImportCSVClick
         end
+        object MenuImportCSV1: TMenuItem
+          Caption = 'CSV file (comma-separated)'
+          OnClick = MenuImportCSV1Click
+        end
       end
       object MenuExport: TMenuItem
         Caption = 'Export to'
@@ -217,6 +222,10 @@ object Form1: TForm1
         object MenuExportCSV: TMenuItem
           Caption = 'CSV file (tab-separated)'
           OnClick = MenuExportCSVClick
+        end
+        object MenuExportCSV1: TMenuItem
+          Caption = 'CSV file (comma-separated)'
+          OnClick = MenuExportCSV1Click
         end
       end
     end

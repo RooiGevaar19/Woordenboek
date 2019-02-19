@@ -44,6 +44,8 @@ type
     MenuExport: TMenuItem;
     MenuImport: TMenuItem;
     MenuImportXML: TMenuItem;
+    MenuExportCSV1: TMenuItem;
+    MenuImportCSV1: TMenuItem;
     MenuReboot: TMenuItem;
     ImportCSVDialog: TOpenDialog;
     ImportXMLDialog: TOpenDialog;
@@ -68,6 +70,9 @@ type
     procedure FormCreate(Sender: TObject);
     procedure ItemClearClick(Sender: TObject);
     procedure ItemEnterClick(Sender: TObject);
+    procedure Label1Click(Sender: TObject);
+    procedure MenuExportCSV1Click(Sender: TObject);
+    procedure MenuImportCSV1Click(Sender: TObject);
     procedure MenuImportCSVClick(Sender: TObject);
     procedure MenuExportCSVClick(Sender: TObject);
     procedure MenuExportXMLClick(Sender: TObject);
@@ -162,6 +167,106 @@ begin
      Form2.ShowModal;
 end;
 
+procedure TForm1.Label1Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.MenuExportCSV1Click(Sender: TObject);
+var
+   fn  : String;
+   fp  : Text;
+   str : String;
+begin
+     if ExportCSVDialog.Execute then
+     begin
+          fn := ExportCSVDialog.FileName;
+          assignfile(fp, fn);
+          rewrite(fp);
+          SQLQuery1.Close;
+          SQLQuery1.SQL.Text := 'SELECT woord_en, woord_fl, beschrijving FROM woord';
+          DBConnection.Connected := True;
+          SQLTransaction1.Active := True;
+          SQLQuery1.Open;
+          SQLQuery1.First;
+          while not SQLQuery1.EOF do
+          begin
+               str := '"' + SQLQuery1.FieldByName('woord_en').AsString + '","' +
+                      SQLQuery1.FieldByName('woord_fl').AsString + '","' +
+                      SQLQuery1.FieldByName('beschrijving').AsString + '"' + #10#13;
+          write(fp, str);
+          SQLQuery1.Next;
+          end;
+          closefile(fp);
+          SQLQuery1.Close;
+          ShowDatabase();
+          ShowMessage('Finished!');
+     end;
+end;
+
+function InsertRecord(S : String; delimiter : Char) : String;
+var
+   query, i      : String;
+   en, fl, notes : String;
+   L             : TStrings;
+begin
+     L := TStringlist.Create;
+     L.Delimiter := delimiter;
+     L.QuoteChar := '"';
+     L.StrictDelimiter := true;
+     L.DelimitedText := S;
+     en := L.Strings[0];
+     fl := L.Strings[1];
+     notes := L.Strings[2];
+     query := 'INSERT INTO woord (woord_en, woord_fl, beschrijving) VALUES ';
+     query := query + '(' + QuotedStr(en) + ',' + QuotedStr(fl) + ','+ QuotedStr(notes) +')';
+     L.Free;
+     InsertRecord := query;
+end;
+
+procedure TForm1.MenuImportCSV1Click(Sender: TObject);
+var
+   fp        : text;
+   query, fn : String;
+   S, E      : string;
+begin
+     if ImportCSVDialog.Execute then
+     begin
+          for fn in ImportCSVDialog.Files do
+          begin
+               try
+                  assignfile(fp, fn);
+                  reset(fp);
+                  SQLQuery1.Close;
+                  while not eof(fp) do
+                  begin
+                       readln(fp, S);
+                       if (S = '') then continue;
+                       query := InsertRecord(S, ',');
+                       SQLQuery1.Close;
+                       SQLQuery1.SQL.Text := query;
+                       DBConnection.Connected := True;
+                       SQLTransaction1.Active := True;
+                       SQLQuery1.ExecSQL;
+                  end;
+                  SQLTransaction1.Commit;
+                  SQLQuery1.Close;
+                  closefile(fp);
+               except
+                     on E : Exception do
+                     begin
+                          SQLTransaction1.Rollback;
+                          ShowMessage('An error occurred on '+#13#10+S+#13#10+'in '+fn+'.');
+                          SQLQuery1.Close;
+                          closefile(fp);
+                     end;
+               end;
+          end;
+          ShowDatabase();
+          ShowMessage('Finished!');
+     end;
+end;
+
 procedure TForm1.MenuImportCSVClick(Sender: TObject);
 var
    fp               : text;
@@ -186,7 +291,7 @@ begin
                     readln(fp, S);
                     if (S = '') then continue;
                     //https://forum.lazarus.freepascal.org/index.php?topic=33644.0
-                    L := TStringlist.Create;
+                    {*L := TStringlist.Create;
                        L.Delimiter := #9;
                        L.QuoteChar := '"';
                        L.StrictDelimiter := true;  // set this to false and the second 'test me' will be separate items! Try it.
@@ -197,7 +302,9 @@ begin
                        notes := L.Strings[2];
                        //showmessage(''+en+' - '+fl+' - '+notes+'');
                        query := 'INSERT INTO woord (woord_en, woord_fl, beschrijving) VALUES ';
-                       query := query + '(''' + en + ''',''' + fl + ''','''+notes+''')';
+                       query := query + '(' + QuotedStr(en) + ',' + QuotedStr(fl) + ','+ QuotedStr(notes) +')';
+                    *}
+                    query := InsertRecord(S, #9);
                        SQLQuery1.Close;
                        SQLQuery1.SQL.Text := query;
                        DBConnection.Connected := True;
