@@ -229,6 +229,21 @@ object Form1: TForm1
         end
       end
     end
+    object MenuItemView: TMenuItem
+      Caption = 'View'
+      object MenuSortID: TMenuItem
+        Caption = 'Sort by ID (default)'
+        OnClick = MenuSortIDClick
+      end
+      object MenuSortEN: TMenuItem
+        Caption = 'Sort by English'
+        OnClick = MenuSortENClick
+      end
+      object MenuSortFL: TMenuItem
+        Caption = 'Sort by Conlang'
+        OnClick = MenuSortFLClick
+      end
+    end
   end
   object ImportCSVDialog: TOpenDialog
     Options = [ofAllowMultiSelect, ofEnableSizing, ofViewDetail]

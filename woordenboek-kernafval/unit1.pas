@@ -46,6 +46,10 @@ type
     MenuImportXML: TMenuItem;
     MenuExportCSV1: TMenuItem;
     MenuImportCSV1: TMenuItem;
+    MenuItemView: TMenuItem;
+    MenuSortID: TMenuItem;
+    MenuSortEN: TMenuItem;
+    MenuSortFL: TMenuItem;
     MenuReboot: TMenuItem;
     ImportCSVDialog: TOpenDialog;
     ImportXMLDialog: TOpenDialog;
@@ -84,11 +88,16 @@ type
     procedure MenuItem4Click(Sender: TObject);
     procedure MenuItem5Click(Sender: TObject);
     procedure MenuRebootClick(Sender: TObject);
+    procedure MenuSortENClick(Sender: TObject);
+    procedure MenuSortFLClick(Sender: TObject);
+    procedure MenuSortIDClick(Sender: TObject);
   private
+    function OrderBySorttype() : String;
     procedure DeleteByID(id : String);
     procedure ShowDatabase();
   public
     arax       : LongInt;
+    sorttype   : ShortInt;
   end;
 
 var
@@ -102,6 +111,14 @@ uses Unit2, Unit3,
 {$R *.lfm}
 
 { TForm1 }
+
+function TForm1.OrderBySorttype() : String;
+begin
+     if (sorttype = 1) then OrderBySorttype := 'ORDER BY woord_en'
+     else if (sorttype = 2) then OrderBySorttype := 'ORDER BY woord_fl'
+     else if (sorttype = 3) then OrderBySorttype := 'ORDER BY beschrijving'
+     else OrderBySorttype := 'ORDER BY id_woord';
+end;
 
 procedure TForm1.DeleteByID(id : String);
 var
@@ -119,7 +136,7 @@ end;
 
 procedure TForm1.ShowDatabase();
 begin
-     SQLQuery1.SQL.Text := 'SELECT id_woord AS ''ID'', woord_en AS ''English Translation'', woord_fl AS ''Conlang Translation'', beschrijving AS ''Notes'' FROM woord';
+     SQLQuery1.SQL.Text := 'SELECT id_woord AS ''ID'', woord_en AS ''English Translation'', woord_fl AS ''Conlang Translation'', beschrijving AS ''Notes'' FROM woord '+OrderBySorttype();
      DBConnection.Connected := True;
      SQLTransaction1.Active := True;
      SQLQuery1.Open;
@@ -140,6 +157,7 @@ begin
      SQLTransaction1.Commit;
      SQLQuery1.Close;
 
+     sorttype := 0;
      ShowDatabase();
 end;
 
@@ -311,7 +329,7 @@ begin
                        SQLTransaction1.Active := True;
                        SQLQuery1.ExecSQL;
                        //ShowMessage(concat('',en,' - ',fl,''));
-                    L.Free;
+                    //L.Free;
                end;
                SQLTransaction1.Commit;
                SQLQuery1.Close;
@@ -468,7 +486,6 @@ end;
 
 procedure TForm1.ItemExitClick(Sender: TObject);
 begin
-     //if mrOK=MessageDlg('Bent u zeker dat u wilt afsluiten ?',mtConfirmation,[mbOK,mbCancel],0) then
      if mrOK=MessageDlg('Are you sure you want to exit?',mtConfirmation,[mbOK,mbCancel],0) then
      begin
           Application.Terminate;
@@ -532,7 +549,7 @@ procedure TForm1.MenuRebootClick(Sender: TObject);
 var
    query : String;
 begin
-    if mrOK=MessageDlg('Are you sure ou want to destroy all base and load it again?'+#13#10+'The database will become empty afterwards.',mtConfirmation,[mbOK,mbCancel],0) then
+    if mrOK=MessageDlg('Are you sure you want to destroy all base and load it again?'+#13#10+'The database will become empty afterwards.',mtConfirmation,[mbOK,mbCancel],0) then
      begin
             query := 'DROP TABLE IF EXISTS woord;';
             SQLQuery1.Close;
@@ -556,24 +573,26 @@ begin
      end;
 end;
 
-{*procedure TForm1.Button1Click(Sender: TObject);
-var
-   query : String;
+procedure TForm1.MenuSortENClick(Sender: TObject);
 begin
-     if mrOK=MessageDlg('Are ou sure you want to clear the database?',mtConfirmation,[mbOK,mbCancel],0) then
-     begin
-            query := 'DELETE FROM woord';
-            SQLQuery1.Close;
-            SQLQuery1.SQL.Text := query;
-            DBConnection.Connected := True;
-            SQLTransaction1.Active := True;
-            SQLQuery1.ExecSQL;
-            SQLTransaction1.Commit;
-            SQLQuery1.Close;
+     sorttype := 1;
+     SQLQuery1.Close;
+     ShowDatabase();
+end;
 
-            ShowDatabase();
-     end;
-end;*}
+procedure TForm1.MenuSortFLClick(Sender: TObject);
+begin
+     sorttype := 2;
+     SQLQuery1.Close;
+     ShowDatabase();
+end;
+
+procedure TForm1.MenuSortIDClick(Sender: TObject);
+begin
+     sorttype := 0;
+     SQLQuery1.Close;
+     ShowDatabase();
+end;
 
 procedure TForm1.ButtonAddEntryClick(Sender: TObject);
 begin
@@ -613,7 +632,7 @@ end;
 procedure TForm1.ButtonFindEN1Click(Sender: TObject);
 begin
      SQLQuery1.Close;
-     SQLQuery1.SQL.Text := 'SELECT id_woord AS ''ID'', woord_en AS ''English Translation'', woord_fl AS ''Conlang Translation'', beschrijving AS ''Notes'' FROM woord';
+     SQLQuery1.SQL.Text := 'SELECT id_woord AS ''ID'', woord_en AS ''English Translation'', woord_fl AS ''Conlang Translation'', beschrijving AS ''Notes'' FROM woord '+OrderBySorttype();
      DBConnection.Connected := True;
      SQLTransaction1.Active := True;
      SQLQuery1.Open;
@@ -624,7 +643,7 @@ var query : String;
 begin
      SQLQuery1.Close;
      query := 'SELECT id_woord AS ''ID'', woord_en AS ''English Translation'', woord_fl AS ''Conlang Translation'', beschrijving AS ''Notes'' FROM woord ';
-     query := query + 'WHERE woord_en LIKE ''%' +  Edit1.Text + '%''';
+     query := query + 'WHERE woord_en LIKE ''%' +  Edit1.Text + '%'' '+OrderBySorttype();
      SQLQuery1.SQL.Text := query;
      DBConnection.Connected := True;
      SQLTransaction1.Active := True;
@@ -637,7 +656,7 @@ var
 begin
      SQLQuery1.Close;
      query := 'SELECT id_woord AS ''ID'', woord_en AS ''English Translation'', woord_fl AS ''Conlang Translation'', beschrijving AS ''Notes'' FROM woord ';
-     query := query + 'WHERE beschrijving LIKE ''%' +  Edit1.Text + '%''';
+     query := query + 'WHERE beschrijving LIKE ''%' +  Edit1.Text + '%'' '+OrderBySorttype();
      SQLQuery1.SQL.Text := query;
      DBConnection.Connected := True;
      SQLTransaction1.Active := True;
@@ -649,7 +668,7 @@ var query : String;
 begin
      SQLQuery1.Close;
      query := 'SELECT id_woord AS ''ID'', woord_en AS ''English Translation'', woord_fl AS ''Conlang Translation'', beschrijving AS ''Notes'' FROM woord ';
-     query := query + 'WHERE woord_fl LIKE ''%' +  Edit1.Text + '%''';
+     query := query + 'WHERE woord_fl LIKE ''%' +  Edit1.Text + '%'' '+OrderBySorttype();
      SQLQuery1.SQL.Text := query;
      DBConnection.Connected := True;
      SQLTransaction1.Active := True;

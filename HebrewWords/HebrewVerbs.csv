@@ -1,6 +1,9 @@
 allow	לתת	verb, pa3al
+answer	לענות	verb, pa3al
 appear	להיראות	verb, nif3al
 arrest	לעצור	verb, pa3al
+ascend	לעלות	verb, pa3al
+ask	לשאול	verb, pa3al
 be	להיות	verb, pa3al
 be interested	להתעניין	verb, hitpa3el
 be sorry	להצטער	verb, hitpa3el
@@ -13,7 +16,9 @@ close	לסגור	verb, pa3al
 come	לבוא	verb, pa3al
 come back	לחזור	verb, pa3al
 concentrate	להתרכז	verb, hitpa3el
+continue	להמשיך	verb, hif3il
 copy	להעתיק	verb, hif3il
+cost	לעלות	verb, pa3al
 create	ליצור	verb, pa3al
 cry	לבכות	verb, pa3al
 cut	לחתוך	verb, pa3al
@@ -23,7 +28,6 @@ divide	לחלק	verb, pi3el
 do	לעשות	verb, pa3al
 drop	ליפול	verb, pa3al
 dress up	להתלבש	verb, hitpa3el
-continue	להמשיך	verb, hif3il
 deal with	להתמודד	verb, hitpa3el
 delete	למחוק	verb, pa3al
 die	למות	verb, pa3al
@@ -99,7 +103,10 @@ rely	להסתמך	verb, hitpa3el
 remain	להישאר	verb, nif3al
 remember	לזכור	verb, pa3al
 remove	למחוק	verb, pa3al
+reply	להשיב	verb, hif3il
+respond	להגיב	verb, hif3il
 return	להחזיר	verb, hif3il
+rise	לעלות	verb, pa3al
 save	לשמור	verb, pa3al
 say	לומר	verb, pa3al
 search	לחפש	verb, pi3el
