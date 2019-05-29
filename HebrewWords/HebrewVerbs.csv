@@ -1,7 +1,9 @@
 allow	לתת	verb, pa3al
 answer	לענות	verb, pa3al
 appear	להיראות	verb, nif3al
+arise	לקום	verb, pa3al
 arrest	לעצור	verb, pa3al
+arrive	להגיע	verb, hif3il
 ascend	לעלות	verb, pa3al
 ask	לשאול	verb, pa3al
 be	להיות	verb, pa3al
@@ -23,17 +25,21 @@ create	ליצור	verb, pa3al
 cry	לבכות	verb, pa3al
 cut	לחתוך	verb, pa3al
 dance	לרקוד	verb, pa3al
+deal with	להתמודד	verb, hitpa3el
 decline	לסרב	verb, pi3el
+decrease	להקטין	verb, pi3el
+delete	למחוק	verb, pa3al
+die	למות	verb, pa3al
+display	להציג	verb, hif3il
 divide	לחלק	verb, pi3el
 do	לעשות	verb, pa3al
 drop	ליפול	verb, pa3al
 dress up	להתלבש	verb, hitpa3el
-deal with	להתמודד	verb, hitpa3el
-delete	למחוק	verb, pa3al
-die	למות	verb, pa3al
 drink	לשתות	verb, pa3al
+drive	לנהוג	verb, pa3al
 eat	לאכול	verb, pa3al
 enable	לאפשר	verb, pi3el
+enlarge	להגדיל	verb, hif3il
 enter	להיכנס	verb, nif3al
 execute	לבצע	verb, pi3el, [execute smth]
 exit	לצאת	verb, pa3al
@@ -51,6 +57,7 @@ force	לחיב	verb, pi3el, [force smn to smth]
 gaze	להסתכל	verb, hitpa3el
 get	לקבל	verb, pi3el
 get out	לצאת	verb, pa3al
+get up	לקום	verb, pa3al
 give	לתת	verb, pa3al
 glue	להדביק	verb, hif3il
 go	ללכת	verb, pa3al
@@ -61,6 +68,8 @@ hear	לשמוע	verb, pa3al
 hide	להתחבא	verb, hitpa3el
 hurt	לכאוב	verb, pa3al
 ignite	להדליק	verb, hif3il
+increase	להגדיל	verb, hif3il
+introduce	להציג	verb, hif3il
 join	להצטרף	verb, hitpa3el
 jump	לקפוץ	verb, pa3al
 kill	להרוג	verb, pa3al
@@ -70,6 +79,7 @@ let	לאפשר	verb, pi3el
 let	לתת	verb, pa3al
 listen	להקשיב	verb, hif3il
 live	לחיות	verb, pa3al
+live	לגור	verb, pa3al, [live in a location]
 load	לטעון	verb, pa3al
 look	להסתכל	verb, hitpa3el, [look at]
 look	להיראות	verb, nif3al, [look like]
@@ -96,6 +106,7 @@ read	לקרוא	verb, pa3al
 realise	להבין	verb, hif3il
 receive	לקבל	verb, pi3el
 recommend	להמליץ	verb, hif3il
+reduce	להקטין	verb, hif3il
 refuse	לסרב	verb, pi3el
 regret	להצטער	verb, hitpa3el
 reject	לסרב	verb, pi3el
@@ -104,9 +115,12 @@ remain	להישאר	verb, nif3al
 remember	לזכור	verb, pa3al
 remove	למחוק	verb, pa3al
 reply	להשיב	verb, hif3il
+reside	לגור	verb, pa3al
 respond	להגיב	verb, hif3il
 return	להחזיר	verb, hif3il
 rise	לעלות	verb, pa3al
+run	לרוץ	verb, pa3al
+run away	לברוח	verb, pa3al
 save	לשמור	verb, pa3al
 say	לומר	verb, pa3al
 search	לחפש	verb, pi3el

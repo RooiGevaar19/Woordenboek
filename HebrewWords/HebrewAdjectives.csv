@@ -1,28 +1,56 @@
-sudden	פתאומי	adjective
-early	מוקדם	adjective
-late	מאוחר	adjective
-wonderful	נפלא	adjective
-beautiful	יפה	adjective
-good	טוב	adjective
-bad	רע	adjective
-cute	מקסים	adjective
-crazy	משוגע	adjective
-weird	מוזר	adjective
-perfect	מושלם	adjective
-strong	חזק	adjective
-weak	חלש	adjective
-fast	מהיר	adjective
-slow	איטי	adjective
-cruel	אכזרי	adjective
-fantastic	פנטסטי	adjective
-awesome	מדהים	adjective
-sad	עצוב	adjective
 angry	כועס	adjective
-funny	מצחיק	adjective
-disappointing	מאכזב	adjective
-happy	שמח	adjective
+awesome	מדהים	adjective
+bad	רע	adjective
+beautiful	יפה	adjective
+bitter	מר	adjective
+bright	בהיר	adjective
+cheap	זול	adjective
 close	קרוב	adjective
+cold	חם	adjective
+crazy	משוגע	adjective
+crazy	מטורף	adjective
+cruel	אכזרי	adjective
+cute	מקסים	adjective
+dark	אפל	adjective
+disappointing	מאכזב	adjective
+early	מוקדם	adjective
+excellent	מצוין	adjective
+expensive	יקר	adjective
+fantastic	פנטסטי	adjective
 far	רחוק	adjective
+fast	מהיר	adjective
+funny	מצחיק	adjective
+good	טוב	adjective
+happy	שמח	adjective
+happy	מאושר	adjective
+heavy	כבד	adjective, [e.g. about weight]
+high	גבוה	adjective
+late	מאוחר	adjective
+light	קל	adjective, [e.g. about weight]
+long	ארוך	adjective
+loud	רם	adjective
+low	נמוך	adjective
+new	חדש	adjective
+noisy	רועש	adjective
+old	ישן	adjective
+perfect	מושלם	adjective
+quiet	שקט	adjective
+sad	עצוב	adjective
+salty	מלוח	adjective
+short	קצר	adjective
+slow	איטי	adjective
+strong	חזק	adjective
+silent	שקט	adjective
+sour	חמוץ	adjective
+sudden	פתאומי	adjective
+superb	מעולה	adjective
+sweet	מתוק	adjective
+tall	גבוה	adjective
+warm	קר	adjective
+weak	חלש	adjective
+weird	מוזר	adjective
+wonderful	נפלא	adjective
+young	צעיר	adjective
 blue	כחול	adjective, color	
 white	לבן	adjective, color
 red	אדום	adjective, color
@@ -34,8 +62,3 @@ orange	כתום	adjective, color
 brown	חום	adjective, color
 gray	אפור	adjective, color
 grey	אפור	adjective, color
-quiet	שקט	adjective
-loud	רם	adjective
-old	ישן	adjective
-new	חדש	adjective
-young	צעיר	adjective
