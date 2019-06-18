@@ -1,3 +1,18 @@
+yes	כן	interjection
+no	לא	interjection
+and	ו	conjunction, (prefix)
+or	או	conjunction
+but	אבל	conjunction
+so	אז	conjunction
+if	אם	conjunction
+whether	האם	conjunction
+that	ש	conjunction
+because	כי	conjunction
+because	מפני ש	conjunction, (prefix)
+before	לפני ש	conjunction, (prefix)
+through	דרך	preposition
+via	דרך	preposition
+because of	בגלל	preposition
 I	אני	personal pronoun
 you	אתה	personal pronoun, (m)
 you	את	personal pronoun, (f)
@@ -7,8 +22,195 @@ it	זה	personal pronoun, (n)
 it	זאת	personal pronoun, (n)
 it	זו	personal pronoun, (n)
 we	אנחנו	personal pronoun
-you	אתם	personal pronoun, (m)
-you	אתן	personal pronoun, (f)
-they	הם	personal pronoun, (m)
-they	הן	personal pronoun, (f)
-they	אלה	personal pronoun, (n)
+you	אתם	personal pronoun, (plm)
+you	אתן	personal pronoun, (plf)
+they	הם	personal pronoun, (plm)
+they	הן	personal pronoun, (plf)
+they	אלה	personal pronoun, (pln)
+me	אותי	preposition
+you	אותך	preposition, (m)
+you	אותך	preposition, (f)
+him	אותו	preposition, (m)
+her	אותה	preposition, (f)
+us	אותנו	preposition
+you	אותכם	preposition, (plm)
+you	אותכן	preposition, (plf)
+them	אותם	preposition, (plm)
+them	אותן	preposition, (plf)
+of	של	possesive pronoun
+of mine	שלי	possesive pronoun
+of yours	שלך	possesive pronoun, (m)
+of yours	שלך	possesive pronoun, (f)
+of his	שלו	possesive pronoun, (m)
+of hers	שלה	possesive pronoun, (f)
+of ours	שלנו	possesive pronoun
+of yours	שלכם	possesive pronoun, (plm)
+of yours	שלכן	possesive pronoun, (plf)
+of theirs	שלהם	possesive pronoun, (plm)
+of theirs	שלהן	possesive pronoun, (plf)
+my	שלי	possesive pronoun
+your	שלך	possesive pronoun, (m)
+your	שלך	possesive pronoun, (f)
+his	שלו	possesive pronoun, (m)
+her	שלה	possesive pronoun, (f)
+our	שלנו	possesive pronoun
+your	שלכם	possesive pronoun, (plm)
+your	שלכן	possesive pronoun, (plf)
+their	שלהם	possesive pronoun, (plm)
+their	שלהן	possesive pronoun, (plf)
+to	אל	preposition
+to me	אליי	preposition
+to you	אליך	preposition, (m)
+to you	אליך	preposition, (f)
+to him	אליו	preposition, (m)
+to her	אליה	preposition, (f)
+to us	אלינו	preposition
+to you	אליכם	preposition, (plm)
+to you	אליכן	preposition, (plf)
+to them	אליהם	preposition, (plm)
+to them	אליהן	preposition, (plf)
+to	ל	preposition, (prefix)
+to me	לי	preposition
+to you	לך	preposition, (m)
+to you	לך	preposition, (f)
+to him	לו	preposition, (m)
+to her	לה	preposition, (f)
+to us	לנו	preposition
+to you	לכם	preposition, (plm)
+to you	לכן	preposition, (plf)
+to them	להם	preposition, (plm)
+to them	להן	preposition, (plf)
+about	על	preposition
+about me	עליי	preposition
+about you	עליך	preposition, (m)
+about you	עליך	preposition, (f)
+about him	עליו	preposition, (m)
+about her	עליה	preposition, (f)
+about us	עלינו	preposition
+about you	עליכם	preposition, (plm)
+about you	עליכן	preposition, (plf)
+about them	עליהם	preposition, (plm)
+about them	עליהן	preposition, (plf)
+on	על	preposition
+on me	עליי	preposition
+on you	עליך	preposition, (m)
+on you	עליך	preposition, (f)
+on him	עליו	preposition, (m)
+on her	עליה	preposition, (f)
+on us	עלינו	preposition
+on you	עליכם	preposition, (plm)
+on you	עליכן	preposition, (plf)
+on them	עליהם	preposition, (plm)
+on them	עליהן	preposition, (plf)
+for	בשביל	preposition
+for me	בשבילי	preposition
+for you	בשבילך	preposition, (m)
+for you	בשבילך	preposition, (f)
+for him	בשבילו	preposition, (m)
+for her	בשבילה	preposition, (f)
+for us	בשבילנו	preposition
+for you	בשבילכם	preposition, (plm)
+for you	בשבילכן	preposition, (plf)
+for them	בשבילהם	preposition, (plm)
+for them	בשבילהן	preposition, (plf)
+for	ל	preposition, (prefix)
+for me	לי	preposition
+for you	לך	preposition, (m)
+for you	לך	preposition, (f)
+for him	לו	preposition, (m)
+for her	לה	preposition, (f)
+for us	לנו	preposition
+for you	לכם	preposition, (plm)
+for you	לכן	preposition, (plf)
+for them	להם	preposition, (plm)
+for them	להן	preposition, (plf)
+in	ב	preposition, (prefix)
+between	בין	preposition
+in me	בי	preposition
+in you	בך	preposition, (m)
+in you	בך	preposition, (f)
+in him	בו	preposition, (m)
+in her	בה	preposition, (f)
+in us	בנו	preposition
+in you	בכם	preposition, (plm)
+in you	בכן	preposition, (plf)
+in them	בהם	preposition, (plm)
+in them	בהן	preposition, (plf)
+with	עם	preposition
+with me	איתי	preposition
+with you	איתך	preposition, (m)
+with you	איתך	preposition, (f)
+with him	איתו	preposition, (m)
+with her	איתה	preposition, (f)
+with us	איתנו	preposition
+with you	איתכם	preposition, (plm)
+with you	איתכן	preposition, (plf)
+with them	איתהם	preposition, (plm)
+with them	איתהן	preposition, (plf)
+without	ללא	preposition
+without	בלי	preposition
+without me	בלעדיי	preposition
+without you	בלעדיך	preposition, (m)
+without you	בלעדיך	preposition, (f)
+without him	בלעדיו	preposition, (m)
+without her	בלעדיה	preposition, (f)
+without us	בלעדינו	preposition
+without you	בלעדיכם	preposition, (plm)
+without you	בלעדיכן	preposition, (plf)
+without them	בלעדיהם	preposition, (plm)
+from	מ	preposition, (prefix)
+from	מן	preposition
+from me	ממני	preposition
+from you	ממך	preposition, (m)
+from you	ממך	preposition, (f)
+from him	ממנו	preposition, (m)
+from her	ממנה	preposition, (f)
+from us	מאיתנו	preposition
+from you	מכם	preposition, (plm)
+from you	מכן	preposition, (plf)
+from them	מהם	preposition, (plm)
+from them	מהן	preposition, (plf)
+at	אצל	preposition
+at me	אצלי	preposition
+at you	אצלך	preposition, (m)
+at you	אצלך	preposition, (f)
+at him	אצלו	preposition, (m)
+at her	אצלה	preposition, (f)
+at us	אצלנו	preposition
+at you	אצלכם	preposition, (plm)
+at you	אצלכן	preposition, (plf)
+at them	אצלהם	preposition, (plm)
+at them	אצלהן	preposition, (plf)
+before	לפני	preposition
+before me	לפניי	preposition
+before you	לפניך	preposition, (m)
+before you	לפניך	preposition, (f)
+before him	לפניו	preposition, (m)
+before her	לפניה	preposition, (f)
+before us	לפנינו	preposition
+before you	לפניכם	preposition, (plm)
+before you	לפניכן	preposition, (plf)
+before them	לפניהם	preposition, (plm)
+before them	לפניהן	preposition, (plf)
+after	אחרי	preposition
+after me	אחריי	preposition
+after you	אחריך	preposition, (m)
+after you	אחריך	preposition, (f)
+after him	אחריו	preposition, (m)
+after her	אחריה	preposition, (f)
+after us	אחרינו	preposition
+after you	אחריכם	preposition, (plm)
+after you	אחריכן	preposition, (plf)
+after them	אחריהם	preposition, (plm)
+after them	אחריהן	preposition, (plf)
+like	כמו	preposition
+like me	כמוני	preposition
+like you	כמוך	preposition, (m)
+like you	כמוך	preposition, (f)
+like him	כמוהו	preposition, (m)
+like her	כמוה	preposition, (f)
+like us	כמונו	preposition
+like you	כמוכם	preposition, (plm)
+like you	כמוכן	preposition, (plf)
+like them	כמוהם	preposition, (plm)
+like them	כמוהן	preposition, (plf)
