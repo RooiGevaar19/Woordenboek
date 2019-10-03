@@ -1,0 +1,12 @@
+east	מזרח	noun, direction, (m)
+north	צפון	noun, direction, (m)
+south	דרום	noun, direction, (m)
+west	מערב	noun, direction, (m)
+eastern	מזרחי	adjective, direction
+northern	צפוני	adjective, direction
+southern	דרומי	adjective, direction
+western	מערבי	adjective, direction
+forward	קדימה	adverb, direction
+backwards	אחורה	adverb, direction
+left	שמאל	adjective, direction
+right	ימין	adjective, direction

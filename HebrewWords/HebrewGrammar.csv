@@ -37,6 +37,17 @@ you	אותכם	preposition, (plm)
 you	אותכן	preposition, (plf)
 them	אותם	preposition, (plm)
 them	אותן	preposition, (plf)
+self	עצם	preposition
+myself	עצמי	preposition
+yourself	עצמך	preposition, (m)
+yourself	עצמך	preposition, (f)
+himself	עצמו	preposition, (m)
+herself	עצמה	preposition, (f)
+ourselves	עצמנו	preposition
+yourselves	עצמכם	preposition, (plm)
+yourselves	עצמכן	preposition, (plf)
+themselves	עצמם	preposition, (plm)
+themselves	עצמן	preposition, (plf)
 of	של	possesive pronoun
 of mine	שלי	possesive pronoun
 of yours	שלך	possesive pronoun, (m)
@@ -147,6 +158,16 @@ with you	איתכם	preposition, (plm)
 with you	איתכן	preposition, (plf)
 with them	איתהם	preposition, (plm)
 with them	איתהן	preposition, (plf)
+with me	עמי	preposition
+with you	עמך	preposition, (m)
+with you	עמך	preposition, (f)
+with him	עמו	preposition, (m)
+with her	עמה	preposition, (f)
+with us	עמנו	preposition
+with you	עמכם	preposition, (plm)
+with you	עמכן	preposition, (plf)
+with them	עמם	preposition, (plm)
+with them	עמן	preposition, (plf)
 without	ללא	preposition
 without	בלי	preposition
 without me	בלעדיי	preposition
@@ -214,3 +235,44 @@ like you	כמוכם	preposition, (plm)
 like you	כמוכן	preposition, (plf)
 like them	כמוהם	preposition, (plm)
 like them	כמוהן	preposition, (plf)
+every	כל	pronoun
+all	כל	pronoun
+how	איך	adverb
+somehow	איכשהו	adverb
+where	איפה	adverb
+nowhere	בשום מקום	adverb
+there	שם	adverb
+somewhere	אי שם	adverb
+everywhere	בכל מקום	adverb
+here	כאן	adverb
+here	פה	adverb
+what	מה	pronoun
+this	זה	pronoun
+something	משהו	pronoun
+everything	הכל	pronoun
+nothing	שום דבר	pronoun
+nothing	כלום	pronoun
+who	מי	pronoun
+someone	מישהו	pronoun, (m)
+someone	מישהי	pronoun, (f)
+no one	אף אחד	pronoun, (m)
+no one	אף אחת	pronoun, (f)
+everyone	כולם	pronoun
+all of me	כולי	pronoun
+all of you	כולך	pronoun, (m)
+all of you	כולך	pronoun, (f)
+all of him	כולו	pronoun, (m)
+all of her	כולה	pronoun, (f)
+all of us	כולנו	pronoun
+all of you	כולכם	pronoun, (plm)
+all of you	כולכן	pronoun, (plf)
+all of them	כולהם	pronoun, (plm)
+all of them	כולהן	pronoun, (plf)
+when	מתי	adverb
+then	אז	adverb
+now	עכשיו	adverb
+now	כעת	adverb
+never	אף פעם	adverb
+sometimes	לפעמים	adverb
+often	בדרך כלל	adverb
+always	תמיד	adverb

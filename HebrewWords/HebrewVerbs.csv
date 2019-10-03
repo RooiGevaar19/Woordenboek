@@ -10,6 +10,7 @@ be	להיות	verb, pa3al
 be interested	להתעניין	verb, hitpa3el
 be sorry	להצטער	verb, hitpa3el
 be visible	להיראות	verb, nif3al
+be wrong	לטעות	verb, pa3al
 begin	להתחיל	verb, hif3il
 believe	להאמין	verb, hif3il
 buy	לקנות	verb, pa3al
@@ -19,6 +20,7 @@ close	לסגור	verb, pa3al
 come	לבוא	verb, pa3al
 come back	לחזור	verb, pa3al
 concentrate	להתרכז	verb, hitpa3el
+congratulate	לאחל	verb, pi3el
 continue	להמשיך	verb, hif3il
 copy	להעתיק	verb, hif3il
 cost	לעלות	verb, pa3al
@@ -49,6 +51,7 @@ expect	לצפות	verb, pi3el
 extinguish	לכבות	verb, pi3el
 fail	להיכשל	verb, nif3al
 fall	ליפול	verb, pa3al
+fall asleep	להירדם	verb, nif3al
 fall in love	להתאהב	verb, hitpa3el
 feel	להרגיש	verb, hif3il
 find	למצוא	verb, pa3al
@@ -62,10 +65,12 @@ get up	לקום	verb, pa3al
 give	לתת	verb, pa3al
 glue	להדביק	verb, hif3il
 go	ללכת	verb, pa3al
+guess	לנחש	verb, pi3el
 halt	לעצור	verb, pa3al
 hang	לתלות	verb, pa3al
 hang around	להסתובב	verb, hitpa3el
 hear	לשמוע	verb, pa3al
+hold	להחזיק	verb, hif3il
 hide	להתחבא	verb, hitpa3el
 hurt	לכאוב	verb, pa3al
 identify	לזהות	verb, pi3el
@@ -86,6 +91,7 @@ load	לטעון	verb, pa3al
 look	להסתכל	verb, hitpa3el, [look at]
 look	להיראות	verb, nif3al, [look like]
 make	לעשות	verb, pa3al
+make a mistake	לטעות	verb, pa3al
 make possible	לאפשר	verb, pi3el
 mean	להתכוון	verb, hitpa3el
 meet	להפגש	verb, nif3al
@@ -101,6 +107,7 @@ paste	להדביק	verb, hif3il
 pay	לשלם	verb, pi3el
 perform	לבצע	verb, pi3el
 play	לשחק	verb, pi3el
+play music	לנגן	verb, pi3el
 pray	להתפלל	verb, hitpa3el
 predict	לצפות	verb, pa3al
 present	להציג	verb, hif3il
@@ -125,6 +132,7 @@ reside	לגור	verb, pa3al
 respond	להגיב	verb, hif3il
 return	להחזיר	verb, hif3il
 rise	לעלות	verb, pa3al
+rotate	להסתובב	verb, hitpa3el
 run	לרוץ	verb, pa3al
 run away	לברוח	verb, pa3al
 save	לשמור	verb, pa3al
@@ -146,6 +154,8 @@ sit	לשבת	verb, pa3al
 slash	לחתוך	verb, pa3al
 sleep	לישון	verb, pa3al
 speak	לדבר	verb, pi3el
+speculate	לנחש	verb, pi3el
+spring	לקפוץ	verb, pa3al
 stand	לעמוד	verb, pa3al
 step	לצעוד	verb, pa3al
 stick	להדביק	verb, hif3il
@@ -153,6 +163,7 @@ stop	להספיק	verb, hif3il, [stop doing smth]
 stop	לעצור	verb, pa3al, [stop smth]
 stumble	להיכשל	verb, nif3al
 sunbathe	להשתזף	verb, hitpa3el
+surprise	להפתיע	verb, hif3il
 talk	לדבר	verb, pi3el
 tell	להגיד	verb, hif3il
 think	לחשוב	verb, pa3al
@@ -171,5 +182,6 @@ whisper	ללחוש	verb, pa3al
 wait	לחכות	verb, pi3el
 warn	להזהיר	verb, hif3il
 win	לנצח	verb, pi3el
+wish	לאחל	verb, pi3el
 work	לעבוד	verb, pa3al
 write	לכתוב	verb, pa3al

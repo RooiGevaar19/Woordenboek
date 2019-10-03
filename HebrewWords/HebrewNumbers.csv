@@ -32,3 +32,23 @@ two hundred	מאתיים	number
 thousand	אלף	number
 two thousand	אלפים	number
 million	מיליון	number
+first	ראשון	number, ordinal, (m)
+first	ראשונה	number, ordinal, (f)
+second	שני	number, ordinal, (m)
+second	שנייה	number, ordinal, (f)
+third	שלישי	number, ordinal, (m)
+third	שלישית	number, ordinal, (f)
+fourth	רביעי	number, ordinal, (m)
+fourth	רביעית	number, ordinal, (f)
+fifth	חמישי	number, ordinal, (m)
+fifth	חמישית	number, ordinal, (f)
+sixth	שישי	number, ordinal, (m)
+sixth	שישית	number, ordinal, (f)
+seventh	שביעי	number, ordinal, (m)
+seventh	שביעית	number, ordinal, (f)
+eighth	שמיני	number, ordinal, (m)
+eighth	שמינית	number, ordinal, (f)
+ninth	תשיעי	number, ordinal, (m)
+ninth	תשיעית	number, ordinal, (f)
+tenth	עשירי	number, ordinal, (m)
+tenth	עשירית	number, ordinal, (f)
