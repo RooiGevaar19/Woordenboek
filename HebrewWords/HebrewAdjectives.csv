@@ -1,12 +1,14 @@
 angry	כועס	adjective
 awesome	מדהים	adjective
 bad	רע	adjective
+barefoot	יחף	adjective
 beautiful	יפה	adjective
+belonging	שייך	adjective, [belonging to smn/smth]
 bitter	מר	adjective
 bright	בהיר	adjective
 cheap	זול	adjective
 clean	נקי	adjective
-clear	ברור	adjective, =obvious
+clear	ברור	adjective, [obvious]
 clever	חכם	adjective
 close	קרוב	adjective
 cold	חם	adjective
@@ -16,76 +18,96 @@ crazy	מטורף	adjective
 cruel	אכזרי	adjective
 cute	מקסים	adjective
 dark	אפל	adjective
+derived	נגזר	adjective, root=גזר, pattern=niktal
 dirty	מלוכלך	adjective
 disappointing	מאכזב	adjective
 early	מוקדם	adjective
+emotional	רגשי	adjective
 excellent	מצוין	adjective
 expensive	יקר	adjective
+exposed	חשוף	adjective
 familiar	מוכר	adjective
 fantastic	פנטסטי	adjective
 far	רחוק	adjective
 fast	מהיר	adjective
+free	חופשי	adjective, [about liberty]
 funny	מצחיק	adjective
 good	טוב	adjective
+great	נאדר	adjective, root=אדר, pattern=niktal
 happy	שמח	adjective
 happy	מאושר	adjective
-heavy	כבד	adjective, [e.g. about weight]
+heavy	כבד	adjective, root=כבד, pattern=katel, description=/about weight/
 high	גבוה	adjective
+ill	חולה	adjective
 important	חשוב	adjective
+impossible	בלתי אפשרי	adjective
+intelligent	נבון	adjective, root=בין, pattern=niktal
 joint	משותף	adjective
 known	ידוע	adjective
 last	אחרון	adjective
 late	מאוחר	adjective
-light	קל	adjective, [e.g. about weight]
+lawful	כדין	adjective
+legal	משפטי	adjective
+legal	חוקי	adjective
+light	קל	adjective, [about weight]
 likely	סביר	adjective
 long	ארוך	adjective
 loud	רם	adjective
 low	נמוך	adjective
+mad	מטורף	adjective
+mad	כועס	adjective
 main	ראשי	adjective
+magnificent	נאדר	adjective, root=אדר, pattern=niktal
 mutual	הדדי	adjective
 new	חדש	adjective
 next	הבא	adjective
 noisy	רועש	adjective
 normal	רגיל	adjective
+obedient	צייתני	adjective
 obvious	ברור	adjective
 old	ישן	adjective
 ordinary	רגיל	adjective
 original	מקורי	adjective
 perfect	מושלם	adjective
+plain	פשוט	adjective, root=פשט, pattern=katul
 poor	עני	adjective
+possible	אפשרי	adjective
 previous	קודם	adjective
 rare	נדיר	adjective
 recognized	מוכר	adjective
+remaining	נותר	adjective, root=ותר, pattern=niktal
+replace	להחליף	adjective
 rich	עשיר	adjective
 right	צודק	adjective, [opposite to wrong]
+rude	גס	adjective
 quiet	שקט	adjective
 sad	עצוב	adjective
 salty	מלוח	adjective
 short	קצר	adjective
+sick	חולה	adjective
+silent	שקט	adjective
+similar	דומה	adjective
+simple	פשוט	adjective, root=פשט, pattern=katul
 slow	איטי	adjective
 smart	חכם	adjective
 strong	חזק	adjective
-silent	שקט	adjective
 straight	ישר	adjective
 sour	חמוץ	adjective
+splendid	נאדר	adjective, root=אדר, pattern=niktal
 stupid	טיפש	adjective
 sudden	פתאומי	adjective
+sufficient	מספיק	adjective
 superb	מעולה	adjective
 sweet	מתוק	adjective
 tall	גבוה	adjective
+transparent	שקוף	adjective
 warm	קר	adjective
 weak	חלש	adjective
 weird	מוזר	adjective
+widespread	נפוץ	adjective, root=פוץ, pattern=niktal
+wise	נבון	adjective, root=בין, pattern=niktal
 wonderful	נפלא	adjective
+wonderful	נהדר	adjective, root=הדר, pattern=niktal
+worthwhile	נבון	adjective, root=בין, pattern=niktal
+wrong	שגוי	adjective
 young	צעיר	adjective
-blue	כחול	adjective, color	
-white	לבן	adjective, color
-red	אדום	adjective, color
-black	שחור	adjective, color
-yellow	צהוב	adjective, color
-green	ירוק	adjective, color
-pink	ורוד	adjective, color
-orange	כתום	adjective, color
-brown	חום	adjective, color
-gray	אפור	adjective, color
-grey	אפור	adjective, color

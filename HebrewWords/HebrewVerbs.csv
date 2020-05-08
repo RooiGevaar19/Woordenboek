@@ -1,39 +1,85 @@
-allow	לתת	verb, pa3al
+abandon	לשבוק	verb, pa3al, root=שבק
+accept	לקבל	verb, pi3el
+amplify	להעצים	verb, hif3il
+aim	לכוון	verb, pi3el, root=כון
+allow	לתת	verb, pa3al, root=נתן
+arrange	להסתדר	verb, hitpa3el
 answer	לענות	verb, pa3al
 appear	להיראות	verb, nif3al
-arise	לקום	verb, pa3al
+appear	להופיע	verb, hif3il
+argue	לריב	verb, pa3al, root=ריב
+arise	לקום	verb, pa3al, root=קום
 arrest	לעצור	verb, pa3al
 arrive	להגיע	verb, hif3il
 ascend	לעלות	verb, pa3al
+attack	לתקוף	verb, pa3al, root=תקף
 ask	לשאול	verb, pa3al
+await	לצפות	verb, pi3el
+battle	להלחם	verb, nif3al
 be	להיות	verb, pa3al
+be afraid	לפחד	verb, pi3el
+be born	להיוולד	verb, nif3al, root=ילד
+be cut off	להגזיר	verb, nif3al, root=גזר
+be equal	לשוות	verb, pa3al, root=שוה
 be interested	להתעניין	verb, hitpa3el
+be prepared	להיכון	verb, nif3al, root=כון
+be ready	להיכון	verb, nif3al, root=כון
+be right	להיכון	verb, nif3al, root=כון
+be sentenced	להגזיר	verb, nif3al, root=גזר
+be silent	לשתוק	verb, pa3al
+be similar	להידמות	verb, nif3al, root=דמה
 be sorry	להצטער	verb, hitpa3el
-be visible	להיראות	verb, nif3al
+be true	להיכון	verb, nif3al, root=כון
+be visible	להיראות	verb, nif3al, root=ראה
+be worth	לשוות	verb, pa3al, root=שוה
 be wrong	לטעות	verb, pa3al
+become equal	להשתוות	verb, hitpa3el, root=שוה
 begin	להתחיל	verb, hif3il
 believe	להאמין	verb, hif3il
+belong	להשתייך	verb, hitpa3el
+break	לשבור	verb, pa3al
+break down	להישבר	verb, nif3al
+breathe	לנשום	verb, pa3al
+bring	להביא	verb, hif3il
+build	להקים	verb, hif3il, root=קום
 buy	לקנות	verb, pa3al
+cancel	לבטל	verb, pi3el
 call	לקרוא	verb, pa3al, [call someone]
-call	לטלפן	verb, pi3el, [call using telephone]
+call	לטלפן	verb, pi3el, root=טלפן, [call using telephone]
 close	לסגור	verb, pa3al
-come	לבוא	verb, pa3al
+close	לעצום	verb, pa3al, [close eyes]
+color	לצבע	verb, pi3el
+come	לבוא	verb, pa3al, root=בוא
 come back	לחזור	verb, pa3al
+compare	להשוות	verb, hif3il, root=שוה
+complete	להשלים	verb, hif3il
+concede	לוותר	verb, pi3el, root=ותר
 concentrate	להתרכז	verb, hitpa3el
 congratulate	לאחל	verb, pi3el
+compete	להתמודד	verb, hitpa3el, root=מדד
 continue	להמשיך	verb, hif3il
 copy	להעתיק	verb, hif3il
 cost	לעלות	verb, pa3al
+cover	לחפות	verb, pi3el
+crash	להתרסק	verb, hitpa3el
 create	ליצור	verb, pa3al
 cry	לבכות	verb, pa3al
 cut	לחתוך	verb, pa3al
+cut off	לגזור	verb, pa3al, root=גזר
 dance	לרקוד	verb, pa3al
-deal with	להתמודד	verb, hitpa3el
+deal with	להתמודד	verb, hitpa3el, root=מדד
+decide	לקובע	verb, pa3al, root=קבע
 decline	לסרב	verb, pi3el
 decrease	להקטין	verb, pi3el
+define	להגדיר	verb, hif3il, root=גדר
 delete	למחוק	verb, pa3al
-die	למות	verb, pa3al
+delay	לעכב	verb, pi3el
+deny	להכחיש	verb, hif3il
+determine	לקובע	verb, pa3al, root=קבע
+die	למות	verb, pa3al, root=מות
+direct	לכוון	verb, pi3el, root=כון
 display	להציג	verb, hif3il
+distribute	להפיץ	verb, hif3il, root=פוץ
 divide	לחלק	verb, pi3el
 do	לעשות	verb, pa3al
 drop	ליפול	verb, pa3al
@@ -41,64 +87,99 @@ dress up	להתלבש	verb, hitpa3el
 drink	לשתות	verb, pa3al
 drive	לנהוג	verb, pa3al
 eat	לאכול	verb, pa3al
+embrace	לחבק	verb, pi3el
 enable	לאפשר	verb, pi3el
 enlarge	להגדיל	verb, hif3il
 enter	להיכנס	verb, nif3al
+estabilish	להקים	verb, hif3il, root=קום
 execute	לבצע	verb, pi3el, [execute smth]
-exit	לצאת	verb, pa3al
+exit	לצאת	verb, pa3al, root=יצא
 extend	להרחיב	verb, hif3il
+extend	להתפשט	verb, hitpa3el
 expect	לצפות	verb, pi3el
+expose	לחשוף	verb, pa3al
 extinguish	לכבות	verb, pi3el
 fail	להיכשל	verb, nif3al
 fall	ליפול	verb, pa3al
 fall asleep	להירדם	verb, nif3al
 fall in love	להתאהב	verb, hitpa3el
 feel	להרגיש	verb, hif3il
+fight	להלחם	verb, nif3al
 find	למצוא	verb, pa3al
 finish	לסיים	verb, pi3el
+fish	לדוג	verb, pa3al
 focus	להתמקד	verb, hitpa3el, [focus on smth]
 force	לחיב	verb, pi3el, [force smn to smth]
+found	להקים	verb, hif3il, root=קום
+fulfil	לקיים	verb, pi3el, root=קים
 gaze	להסתכל	verb, hitpa3el
 get	לקבל	verb, pi3el
+get by	להסתדר	verb, hitpa3el
 get out	לצאת	verb, pa3al
-get up	לקום	verb, pa3al
-give	לתת	verb, pa3al
+get undressed	להתפשט	verb, hitpa3el, root=פשט
+get up	לקום	verb, pa3al, root=קום
+give	לתת	verb, pa3al, root=נתן
+give birth	ללדת	verb, pa3al, root=ילד
+give up	לוותר	verb, pi3el, root=ותר
 glue	להדביק	verb, hif3il
-go	ללכת	verb, pa3al
+go	ללכת	verb, pa3al, root=הלך
 guess	לנחש	verb, pi3el
 halt	לעצור	verb, pa3al
 hang	לתלות	verb, pa3al
 hang around	להסתובב	verb, hitpa3el
+heal	לרפא	verb, pi3el
 hear	לשמוע	verb, pa3al
 hold	להחזיק	verb, hif3il
+hope	לקוות	verb, pi3el, root=קוה
 hide	להתחבא	verb, hitpa3el
+honor	להדור	verb, pa3al, root=הדר
+honor	לכבד	verb, pi3el, root=כבד
+honour	להדור	verb, pa3al, root=הדר
+honour	לכבד	verb, pi3el, root=כבד
+hug	לחבק	verb, pi3el
+hunt	לצוד	verb, pa3al
 hurt	לכאוב	verb, pa3al
 identify	לזהות	verb, pi3el
 ignite	להדליק	verb, hif3il
+imagine	לדמיין	verb, pi3el, root=דמין
 increase	להגדיל	verb, hif3il
+intend	להתכוון	verb, hitpa3el, root=כון
+intensify	להעצים	verb, hif3il
 introduce	להציג	verb, hif3il
 join	להצטרף	verb, hitpa3el
 jump	לקפוץ	verb, pa3al
 kill	להרוג	verb, pa3al
-know	לדעת	verb, pa3al
+know	לדעת	verb, pa3al, root=ידע
 leave	לעזוב	verb, pa3al
 let	לאפשר	verb, pi3el
-let	לתת	verb, pa3al
+let	לתת	verb, pa3al, root=נתן
+lie	לשקר	verb, pi3el
 listen	להקשיב	verb, hif3il
 live	לחיות	verb, pa3al
-live	לגור	verb, pa3al, [live in a location]
+live	לגור	verb, pa3al, root=גור, [live in a location]
 load	לטעון	verb, pa3al
+long for	להתגעגע	verb, hitpa3el, root=געגע
 look	להסתכל	verb, hitpa3el, [look at]
 look	להיראות	verb, nif3al, [look like]
+look forward to	לצפות	verb, pi3el
+maintain	לקיים	verb, pi3el, root=קים
 make	לעשות	verb, pa3al
 make a mistake	לטעות	verb, pa3al
+make equal	להשוות	verb, hif3il, root=שוה
 make possible	לאפשר	verb, pi3el
-mean	להתכוון	verb, hitpa3el
+make stronger	להתעצם	verb, hitpa3el
+make true	לקיים	verb, pi3el, root=קים
+manage	להסתדר	verb, hitpa3el
+match	לשוות	verb, pa3al, root=שוה
+mean	להתכוון	verb, hitpa3el, root=כון
 meet	להפגש	verb, nif3al
-miss	לנתגעגע	verb, hitpa3el, [miss smn]
+mention	להזכיר	verb, hif3il
+miss	להתגעגע	verb, hitpa3el, root=געגע, [miss smn]
 miss	להחמיץ	verb, hif3il, [miss e.g. a chance/opportunity]
 move	להזיז	verb, hif3il
 move past	לחלוף	verb, pa3al
+neglect	להזניח	verb, hif3il
+obey	לציית	verb, pi3el, root=צית
 obtain	להשיג	verb, hif3il
 open	לפתוח	verb, pa3al
 pass	לעבור	verb, pa3al
@@ -108,10 +189,15 @@ pay	לשלם	verb, pi3el
 perform	לבצע	verb, pi3el
 play	לשחק	verb, pi3el
 play music	לנגן	verb, pi3el
+praise	להדר	verb, pi3el, root=הדר
 pray	להתפלל	verb, hitpa3el
 predict	לצפות	verb, pa3al
 present	להציג	verb, hif3il
 purchase	לקנות	verb, pa3al
+put	לשים	verb, pa3al, root=שים
+quarrel	לריב	verb, pa3al, root=ריב
+quit	לצאת	verb, pa3al, root=יצא
+raid	לפשוט	verb, pa3al, root=פשט
 reach	להגיע	verb, hif3il
 read	לקרוא	verb, pa3al
 realise	להבין	verb, hif3il
@@ -125,49 +211,70 @@ reject	לסרב	verb, pi3el
 rely	להסתמך	verb, hitpa3el
 remain	להישאר	verb, nif3al
 remember	לזכור	verb, pa3al
+remind	להזכיר	verb, hif3il
 remove	למחוק	verb, pa3al
+remove clothing	לפשוט	verb, pa3al, root=פשט
 reply	להשיב	verb, hif3il
-represent	לייצג	verb, pi3el
-reside	לגור	verb, pa3al
+represent	לייצג	verb, pi3el, root=יצג
+resemble	להידמות	verb, nif3al, root=דמה
+reside	לגור	verb, pa3al, root=גור
 respond	להגיב	verb, hif3il
+respect	להדור	verb, pa3al, root=הדר
+respect	לכבד	verb, pi3el, root=כבד
 return	להחזיר	verb, hif3il
 rise	לעלות	verb, pa3al
 rotate	להסתובב	verb, hitpa3el
-run	לרוץ	verb, pa3al
+run	לרוץ	verb, pa3al, root=רוץ
 run away	לברוח	verb, pa3al
 save	לשמור	verb, pa3al
 say	לומר	verb, pa3al
+scatter	להפיץ	verb, hif3il, root=פוץ
+scream	לצעוק	verb, pa3al
 search	לחפש	verb, pi3el
 seek	לחפש	verb, pi3el
 see	לראות	verb, pa3al
 see again	להתראות	verb, hitpa3el
 send	לשלוח	verb, pa3al
+sentence	לגזור	verb, pa3al, root=גזר
 sell	למכור	verb, pa3al
+set	לקובע	verb, pa3al, root=קבע
 share	לשתף	verb, pi3el
 shave	להתגלח	verb, hitpa3el
 shout	לצעוק	verb, pa3al
 show	להציג	verb, hif3il
 shrink	לכווץ	verb, pi3el
 shut	לסגור	verb, pa3al
+shut	לעצום	verb, pa3al
 sing	לשיר	verb, pa3al
-sit	לשבת	verb, pa3al
+simplify	לפשט	verb, pi3el, root=פשט
+sin	לחטוא	verb, pa3al
+sit	לשבת	verb, pa3al, root=ישב
 slash	לחתוך	verb, pa3al
 sleep	לישון	verb, pa3al
 speak	לדבר	verb, pi3el
 speculate	לנחש	verb, pi3el
+spread	להפיץ	verb, hif3il, root=פוץ
+spread	להתפשט	verb, hitpa3el
 spring	לקפוץ	verb, pa3al
 stand	לעמוד	verb, pa3al
 step	לצעוד	verb, pa3al
 stick	להדביק	verb, hif3il
-stop	להספיק	verb, hif3il, [stop doing smth]
+stop	להפסיק	verb, hif3il, [stop doing smth]
 stop	לעצור	verb, pa3al, [stop smth]
+strengthen	להעצים	verb, hif3il
+struggle	להלחם	verb, nif3al
 stumble	להיכשל	verb, nif3al
+suffice	להספיק	verb, hif3il
 sunbathe	להשתזף	verb, hitpa3el
 surprise	להפתיע	verb, hif3il
+take	לקחת	verb, pa3al, root=לקח
 talk	לדבר	verb, pi3el
+tear	לקרוע	verb, pa3al
 tell	להגיד	verb, hif3il
 think	לחשוב	verb, pa3al
+touch	לגעת	verb, pa3al, root=נגע
 trust	להאמין	verb, hif3il
+try	לנסות	verb, pi3el
 turn	לפנות	verb, pa3al
 turn on	להדליק	verb, hif3il
 turn off	לכבות	verb, pi3el
@@ -175,13 +282,18 @@ turn around	להסתובב	verb, hitpa3el
 understand	להבין	verb, hif3il
 use	להשתמש	verb, hitpa3el
 visit	לבקר	verb, pi3el
+visualise	לדמיין	verb, pi3el, root=דמין
+wake up	להתעורר	verb, hitpa3el, root=עור
 want	לרצות	verb, pa3al
 watch	להסתכל	verb, hitpa3el
-watch	לצפות	verb, pa3al, [e.g. watch TV]
+watch	לצפות	verb, pa3al, root=צפה, [e.g. watch TV]
 whisper	ללחוש	verb, pa3al
 wait	לחכות	verb, pi3el
 warn	להזהיר	verb, hif3il
 win	לנצח	verb, pi3el
 wish	לאחל	verb, pi3el
+withstand	להתמודד	verb, hitpa3el, root=מדד
 work	לעבוד	verb, pa3al
+work out	להסתדר	verb, hitpa3el
 write	לכתוב	verb, pa3al
+yearn	להתגעגע	verb, hitpa3el, root=געגע
