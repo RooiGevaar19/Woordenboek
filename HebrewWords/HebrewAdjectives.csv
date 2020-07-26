@@ -1,22 +1,29 @@
+accessible	נגיש	adjective, root=נגש, pattern=katil
 angry	כועס	adjective
+approachable	נגיש	adjective, root=נגש, pattern=katil
 awesome	מדהים	adjective
 bad	רע	adjective
 barefoot	יחף	adjective
 beautiful	יפה	adjective
-belonging	שייך	adjective, [belonging to smn/smth]
+belonging	שייך	adjective, description="belonging to smn/smth"
 bitter	מר	adjective
 bright	בהיר	adjective
+charming	חמוד	adjective, root=חמד, pattern=katul
 cheap	זול	adjective
 clean	נקי	adjective
-clear	ברור	adjective, [obvious]
+clear	ברור	adjective, description="obvious"
 clever	חכם	adjective
 close	קרוב	adjective
 cold	חם	adjective
 common	נפוץ	adjective
 crazy	משוגע	adjective
 crazy	מטורף	adjective
+created	יצור	adjective, root=יצר, pattern=katul
+creative	יצירתי	adjective, root=יצר
 cruel	אכזרי	adjective
+cute	חמוד	adjective, root=חמד, pattern=katul
 cute	מקסים	adjective
+danceable	רקיד	adjective, root=רקד, pattern=katil
 dark	אפל	adjective
 derived	נגזר	adjective, root=גזר, pattern=niktal
 dirty	מלוכלך	adjective
@@ -28,15 +35,17 @@ expensive	יקר	adjective
 exposed	חשוף	adjective
 familiar	מוכר	adjective
 fantastic	פנטסטי	adjective
+famous	מפורסם	adjective, root=פרסם, pattern=mekuttal
 far	רחוק	adjective
 fast	מהיר	adjective
-free	חופשי	adjective, [about liberty]
+free	חופשי	adjective, description="about liberty"
 funny	מצחיק	adjective
 good	טוב	adjective
 great	נאדר	adjective, root=אדר, pattern=niktal
 happy	שמח	adjective
 happy	מאושר	adjective
-heavy	כבד	adjective, root=כבד, pattern=katel, description=/about weight/
+heavy	כבד	adjective, root=כבד, pattern=katel, description="about weight"
+healthy	בריא	adjective, root=ברא, pattern=katil
 high	גבוה	adjective
 ill	חולה	adjective
 important	חשוב	adjective
@@ -49,10 +58,11 @@ late	מאוחר	adjective
 lawful	כדין	adjective
 legal	משפטי	adjective
 legal	חוקי	adjective
-light	קל	adjective, [about weight]
+light	קל	adjective, description="about weight"
 likely	סביר	adjective
 long	ארוך	adjective
 loud	רם	adjective
+lovely	נחמד	adjective, root=חמד, pattern=niktal
 low	נמוך	adjective
 mad	מטורף	adjective
 mad	כועס	adjective
@@ -61,6 +71,7 @@ magnificent	נאדר	adjective, root=אדר, pattern=niktal
 mutual	הדדי	adjective
 new	חדש	adjective
 next	הבא	adjective
+nice	נחמד	adjective, root=חמד, pattern=niktal
 noisy	רועש	adjective
 normal	רגיל	adjective
 obedient	צייתני	adjective
@@ -68,9 +79,11 @@ obvious	ברור	adjective
 old	ישן	adjective
 ordinary	רגיל	adjective
 original	מקורי	adjective
+painful	כואב	adjective, root=כאב, pattern=
 perfect	מושלם	adjective
 plain	פשוט	adjective, root=פשט, pattern=katul
 poor	עני	adjective
+popular	פופולרי	adjective
 possible	אפשרי	adjective
 previous	קודם	adjective
 rare	נדיר	adjective
@@ -78,7 +91,7 @@ recognized	מוכר	adjective
 remaining	נותר	adjective, root=ותר, pattern=niktal
 replace	להחליף	adjective
 rich	עשיר	adjective
-right	צודק	adjective, [opposite to wrong]
+right	צודק	adjective, descripition="opposite to wrong"
 rude	גס	adjective
 quiet	שקט	adjective
 sad	עצוב	adjective
@@ -98,12 +111,14 @@ stupid	טיפש	adjective
 sudden	פתאומי	adjective
 sufficient	מספיק	adjective
 superb	מעולה	adjective
-sweet	מתוק	adjective
+sweet	חמוד	adjective, root=חמד, pattern=katul, description="about people"
+sweet	מתוק	adjective, root=מתק, paatern=katol, description="about things, e.g. food"
 tall	גבוה	adjective
 transparent	שקוף	adjective
 warm	קר	adjective
 weak	חלש	adjective
 weird	מוזר	adjective
+well known	מפורסם	adjective, root=פרסם, pattern=mekuttal
 widespread	נפוץ	adjective, root=פוץ, pattern=niktal
 wise	נבון	adjective, root=בין, pattern=niktal
 wonderful	נפלא	adjective
