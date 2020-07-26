@@ -127,7 +127,7 @@ extinguish	לכבות	verb, pattern=pi3el
 fail	להיכשל	verb, pattern=nif3al
 fall	ליפול	verb, pattern=pa3al
 fall asleep	להירדם	verb, pattern=nif3al
-fall in love	להתאהב	verb, pattern=hitpa3el
+fall in love	להתאהב	verb, pattern=hitpa3el, root=אהב
 feel	להרגיש	verb, pattern=hif3il
 feel pain	לכאוב	verb, pattern=pa3al, root=כאב
 fight	להלחם	verb, pattern=nif3al
@@ -195,6 +195,7 @@ long for	להתגעגע	verb, pattern=hitpa3el, root=געגע
 look	להסתכל	verb, pattern=hitpa3el, [look at]
 look	להיראות	verb, pattern=nif3al, [look like]
 look forward to	לצפות	verb, pattern=pi3el
+love	לאהוב	verb, pattern=pa3al, root=אהב
 lust	לחמוד	verb, pattern=pa3al, root=חמד
 maintain	לקיים	verb, pattern=pi3el, root=קים
 make	לעשות	verb, pattern=pa3al, root=עשה
