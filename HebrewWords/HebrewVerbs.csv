@@ -23,6 +23,7 @@ battle	להלחם	verb, pattern=nif3al
 be	להיות	verb, pattern=pa3al
 be afraid	לפחד	verb, pattern=pi3el
 be born	להיוולד	verb, pattern=nif3al, root=ילד
+be cooked	להתבשל	verb, pattern=hitpa3el, root=בשל
 be created	להיברא	verb, pattern=nif3al, root=ברא
 be created	להיווצר	verb, pattern=nif3al, root=יצר
 be cut off	להגזיר	verb, pattern=nif3al, root=גזר
@@ -49,10 +50,12 @@ believe	להאמין	verb, pattern=hif3il
 belong	להשתייך	verb, pattern=hitpa3el
 besiege	לצור	verb, pattern=pa3al, root=צור
 boast	להשתבח	verb, pattern=hitpa3el, root=שבח
+boil	לבשל	verb, pattern=pi3el, root=בשל
 brag	להשתבח	verb, pattern=hitpa3el, root=שבח
-break	לשבור	verb, pattern=pa3al
-break down	להישבר	verb, pattern=nif3al
-breathe	לנשום	verb, pattern=pa3al
+break	לשבור	verb, pattern=pa3al, root=שבר
+break down	להישבר	verb, pattern=nif3al, root=שבר
+breathe	לנשום	verb, pattern=pa3al, root=נשם
+brew	להתבשל	verb, pattern=hitpa3el, root=בשל
 bring	להביא	verb, pattern=hif3il
 build	להקים	verb, pattern=hif3il, root=קום
 buy	לקנות	verb, pattern=pa3al
@@ -77,6 +80,7 @@ congratulate	לאחל	verb, pattern=pi3el
 convalesce	להבריא	verb, pattern=hif3il, root=ברא
 continue	להמשיך	verb, pattern=hif3il, root=משך
 contradict	להתנגש	verb, pattern=hitpa3el, root=נגש
+cook	לבשל	verb, pattern=pi3el, root=בשל
 copy	להעתיק	verb, pattern=hif3il, root=עתק
 cost	לעלות	verb, pattern=pa3al, root=עלה
 cover	לחפות	verb, pattern=pi3el, root=חפה
@@ -210,6 +214,7 @@ make true	לקיים	verb, pattern=pi3el, root=קים
 manage	להסתדר	verb, pattern=hitpa3el
 manufacture	לייצר	verb, pattern=pi3el, root=יצר
 match	לשוות	verb, pattern=pa3al, root=שוה
+mature	להבשיל	verb, pattern=hif3il, root=בשל
 mean	להתכוון	verb, pattern=hitpa3el, root=כון
 meet	להפגש	verb, pattern=nif3al
 mention	להזכיר	verb, pattern=hif3il
@@ -243,6 +248,7 @@ quarrel	לריב	verb, pattern=pa3al, root=ריב
 quit	לצאת	verb, pattern=pa3al, root=יצא
 raid	לפשוט	verb, pattern=pa3al, root=פשט
 reach	להגיע	verb, pattern=hif3il
+react	להגיב	verb, pattern=hif3il, root=גוב
 read	לקרוא	verb, pattern=pa3al
 realise	להבין	verb, pattern=hif3il
 receive	לקבל	verb, pattern=pi3el
@@ -263,12 +269,14 @@ reply	להשיב	verb, pattern=hif3il, root=השב
 represent	לייצג	verb, pattern=pi3el, root=יצג
 resemble	להידמות	verb, pattern=nif3al, root=דמה
 reside	לגור	verb, pattern=pa3al, root=גור
-respond	להגיב	verb, pattern=hif3il
+respond	להגיב	verb, pattern=hif3il, root=גוב
 respect	להדור	verb, pattern=pa3al, root=הדר
 respect	לכבד	verb, pattern=pi3el, root=כבד
-return	להחזיר	verb, pattern=hif3il
-rise	לעלות	verb, pattern=pa3al
-rotate	להסתובב	verb, pattern=hitpa3el
+return	להחזיר	verb, pattern=hif3il, root=חזר
+ripen	לבשול	verb, pattern=pa3al, root=בשל
+ripen	להבשיל	verb, pattern=hif3il, root=בשל
+rise	לעלות	verb, pattern=pa3al, root=עלה
+rotate	להסתובב	verb, pattern=hitpa3el, root=סבב
 run	לרוץ	verb, pattern=pa3al, root=רוץ
 run away	לברוח	verb, pattern=pa3al
 save	לשמור	verb, pattern=pa3al

@@ -68,6 +68,7 @@ mad	מטורף	adjective
 mad	כועס	adjective
 main	ראשי	adjective
 magnificent	נאדר	adjective, root=אדר, pattern=niktal
+mature	בשל	adjective, root=בשל, pattern=katel, description="about food"
 mutual	הדדי	adjective
 new	חדש	adjective
 next	הבא	adjective
@@ -85,13 +86,17 @@ plain	פשוט	adjective, root=פשט, pattern=katul
 poor	עני	adjective
 popular	פופולרי	adjective
 possible	אפשרי	adjective
+prepared	בשל	adjective, root=בשל, pattern=katel, description="about food"
 previous	קודם	adjective
 rare	נדיר	adjective
+ready	מוכן	adjective, root=כון, pattern=muktal
+ready	בשל	adjective, root=בשל, pattern=katel, description="about food"
 recognized	מוכר	adjective
 remaining	נותר	adjective, root=ותר, pattern=niktal
 replace	להחליף	adjective
 rich	עשיר	adjective
 right	צודק	adjective, descripition="opposite to wrong"
+ripe	בשל	adjective, root=בשל, pattern=katel, description="about food"
 rude	גס	adjective
 quiet	שקט	adjective
 sad	עצוב	adjective
