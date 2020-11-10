@@ -1,4 +1,5 @@
 accessible	נגיש	adjective, root=נגש, pattern=katil
+accounting	חשבונאי	adjective, root=חשב
 angry	כועס	adjective
 approachable	נגיש	adjective, root=נגש, pattern=katil
 awesome	מדהים	adjective
@@ -16,6 +17,7 @@ clever	חכם	adjective
 close	קרוב	adjective
 cold	חם	adjective
 common	נפוץ	adjective
+considered	חשוב	adjective, root=חשב, pattern=katul, description="used with כ-"
 crazy	משוגע	adjective
 crazy	מטורף	adjective
 created	יצור	adjective, root=יצר, pattern=katul
@@ -48,7 +50,7 @@ heavy	כבד	adjective, root=כבד, pattern=katel, description="about weight"
 healthy	בריא	adjective, root=ברא, pattern=katil
 high	גבוה	adjective
 ill	חולה	adjective
-important	חשוב	adjective
+important	חשוב	adjective, root=חשב, pattern=katul
 impossible	בלתי אפשרי	adjective
 intelligent	נבון	adjective, root=בין, pattern=niktal
 joint	משותף	adjective
