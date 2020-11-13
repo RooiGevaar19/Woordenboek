@@ -1,9 +1,15 @@
+certainly	בוודאי	adverb, root=ודא
+definitely	בוודאי	adverb, root=ודא
 early	מוקדם	adverb
-free	בחינם	adverb, [about price]
+free	בחינם	adverb, description="about price"
 lately	לאחרונה	adverb
 madly	בטירוף	adverb
 meanwhile	בינתיים	adverb, time
+in retrospect	בדיעבד	adverb, root=עבד
+of course	בוודאי	adverb, root=ודא
+post factum	בדיעבד	adverb, root=עבד
 quickly	במהירות	adverb
 rarely	לעתים רחוקות	adverb
 slowly	לאט	adverb
 suddenly	פתאום	adverb
+without a shadow of doubt	בוודאי	adverb, root=ודא

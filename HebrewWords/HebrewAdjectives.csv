@@ -9,6 +9,7 @@ beautiful	יפה	adjective
 belonging	שייך	adjective, description="belonging to smn/smth"
 bitter	מר	adjective
 bright	בהיר	adjective
+certain	ודאי	adjective, root=ודא
 charming	חמוד	adjective, root=חמד, pattern=katul
 cheap	זול	adjective
 clean	נקי	adjective
@@ -40,6 +41,7 @@ fantastic	פנטסטי	adjective
 famous	מפורסם	adjective, root=פרסם, pattern=mekuttal
 far	רחוק	adjective
 fast	מהיר	adjective
+financial	כספי	adjective, finance, root=כסף
 free	חופשי	adjective, description="about liberty"
 funny	מצחיק	adjective
 good	טוב	adjective
@@ -71,6 +73,7 @@ mad	כועס	adjective
 main	ראשי	adjective
 magnificent	נאדר	adjective, root=אדר, pattern=niktal
 mature	בשל	adjective, root=בשל, pattern=katel, description="about food"
+monetary	כספי	adjective, finance, root=כסף
 mutual	הדדי	adjective
 new	חדש	adjective
 next	הבא	adjective
@@ -106,14 +109,15 @@ salty	מלוח	adjective
 short	קצר	adjective
 sick	חולה	adjective
 silent	שקט	adjective
+silvery	כספי	adjective, finance, root=כסף
 similar	דומה	adjective
 simple	פשוט	adjective, root=פשט, pattern=katul
 slow	איטי	adjective
 smart	חכם	adjective
-strong	חזק	adjective
-straight	ישר	adjective
 sour	חמוץ	adjective
 splendid	נאדר	adjective, root=אדר, pattern=niktal
+straight	ישר	adjective
+strong	חזק	adjective
 stupid	טיפש	adjective
 sudden	פתאומי	adjective
 sufficient	מספיק	adjective
@@ -122,6 +126,7 @@ sweet	חמוד	adjective, root=חמד, pattern=katul, description="about people"
 sweet	מתוק	adjective, root=מתק, paatern=katol, description="about things, e.g. food"
 tall	גבוה	adjective
 transparent	שקוף	adjective
+undoubted	ודאי	adjective, root=ודא
 warm	קר	adjective
 weak	חלש	adjective
 weird	מוזר	adjective

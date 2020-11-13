@@ -20,7 +20,7 @@ attack	לתקוף	verb, pattern=pa3al, root=תקף
 ask	לשאול	verb, pattern=pa3al, root=שאל
 await	לצפות	verb, pattern=pi3el, root=צפה
 battle	להלחם	verb, pattern=nif3al
-be	להיות	verb, pattern=pa3al
+be	להיות	verb, pattern=pa3al, root=היה
 be afraid	לפחד	verb, pattern=pi3el
 be born	להיוולד	verb, pattern=nif3al, root=ילד
 be cooked	להתבשל	verb, pattern=hitpa3el, root=בשל
@@ -28,6 +28,7 @@ be considered	להיחשב	verb, pattern=nif3al, root=חשב, description="used 
 be created	להיברא	verb, pattern=nif3al, root=ברא
 be created	להיווצר	verb, pattern=nif3al, root=יצר
 be cut off	להגזיר	verb, pattern=nif3al, root=גזר
+be ended	להסתיים	verb, pattern=hitpa3el, root=סים
 be equal	לשוות	verb, pattern=pa3al, root=שוה
 be interested	להתעניין	verb, pattern=hitpa3el
 be praised	להשתבח	verb, pattern=hitpa3el, root=שבח
@@ -35,7 +36,9 @@ be prepared	להיכון	verb, pattern=nif3al, root=כון
 be published	להתפרסם	verb, pattern=hitpa3el, root=פרסם
 be ready	להיכון	verb, pattern=nif3al, root=כון
 be right	להיכון	verb, pattern=nif3al, root=כון
+be sealed	להיחתם	verb, pattern=nif3al, root=חתם
 be sentenced	להגזיר	verb, pattern=nif3al, root=גזר
+be signed	להיחתם	verb, pattern=nif3al, root=חתם
 be silent	לשתוק	verb, pattern=pa3al
 be similar	להידמות	verb, pattern=nif3al, root=דמה
 be sorry	להצטער	verb, pattern=hitpa3el
@@ -45,7 +48,9 @@ be worth	לשוות	verb, pattern=pa3al, root=שוה
 be wrong	לטעות	verb, pattern=pa3al
 become equal	להשתוות	verb, pattern=hitpa3el, root=שוה
 become famous	להתפרסם	verb, pattern=hitpa3el, root=פרסם
+become golden	להזהיב	verb, pattern=hif3il, root=זהב
 become known	להתפרסם	verb, pattern=hitpa3el, root=פרסם
+become silvery	להכסיף	verb, pattern=hif3il, root=כסף
 begin	להתחיל	verb, pattern=hif3il
 believe	להאמין	verb, pattern=hif3il
 belong	להשתייך	verb, pattern=hitpa3el
@@ -60,6 +65,7 @@ brew	להתבשל	verb, pattern=hitpa3el, root=בשל
 bring	להביא	verb, pattern=hif3il
 build	להקים	verb, pattern=hif3il, root=קום
 buy	לקנות	verb, pattern=pa3al
+cackle	לגעגע	verb, pattern=pi3el, root=געגע
 cancel	לבטל	verb, pattern=pi3el
 calculate	לחשב	verb, science, mathematics, pattern=pi3el, root=חשב
 call	לקרוא	verb, pattern=pa3al, description="call someone"
@@ -76,6 +82,7 @@ come near	לגשת	verb, pattern=pa3al, root=נגש
 compare	להשוות	verb, pattern=hif3il, root=שוה
 compete	להתמודד	verb, pattern=hitpa3el, root=מדד
 complete	להשלים	verb, pattern=hif3il
+complete	לסיים	verb, pattern=pi3el, root=סים
 concede	לוותר	verb, pattern=pi3el, root=ותר
 concentrate	להתרכז	verb, pattern=hitpa3el
 congratulate	לאחל	verb, pattern=pi3el
@@ -110,6 +117,7 @@ deny	להכחיש	verb, pattern=hif3il
 determine	לקובע	verb, pattern=pa3al, root=קבע
 die	למות	verb, pattern=pa3al, root=מות
 direct	לכוון	verb, pattern=pi3el, root=כון
+direct	להנחות	verb, pattern=hif3il, root=נחה
 display	להציג	verb, pattern=hif3il
 distribute	להפיץ	verb, pattern=hif3il, root=פוץ
 divide	לחלק	verb, pattern=pi3el
@@ -120,8 +128,11 @@ drink	לשתות	verb, pattern=pa3al
 drive	לנהוג	verb, pattern=pa3al
 eat	לאכול	verb, pattern=pa3al
 embrace	לחבק	verb, pattern=pi3el
+employ	להעביד	verb, pattern=hif3il, root=עבד
 enable	לאפשר	verb, pattern=pi3el
+end	להסתיים	verb, pattern=hitpa3el, root=סים
 enlarge	להגדיל	verb, pattern=hif3il
+enslave	לשעבד	verb, pattern=pi3el, root=שעבד
 enter	להיכנס	verb, pattern=nif3al
 estabilish	להקים	verb, pattern=hif3il, root=קום
 esteem	להחשיב	verb, pattern=hif3il, root=חשב
@@ -140,19 +151,22 @@ feel	להרגיש	verb, pattern=hif3il
 feel pain	לכאוב	verb, pattern=pa3al, root=כאב
 fight	להלחם	verb, pattern=nif3al
 find	למצוא	verb, pattern=pa3al
-finish	לסיים	verb, pattern=pi3el
+finish	לסיים	verb, pattern=pi3el, root=סים
+finish	לחתום	verb, pattern=pa3al, root=חתם
 fish	לדוג	verb, pattern=pa3al
 focus	להתמקד	verb, pattern=hitpa3el, description="focus on smth"
 force	לחיב	verb, pattern=pi3el, description="force smn to smth"
 form	לצור	verb, pattern=pa3al, root=צור
 found	להקים	verb, pattern=hif3il, root=קום
 fulfil	לקיים	verb, pattern=pi3el, root=קים
+function	לעבוד	verb, pattern=pa3al, root=עבד
 gaze	להסתכל	verb, pattern=hitpa3el
 get	לקבל	verb, pattern=pi3el
 get by	להסתדר	verb, pattern=hitpa3el
 get out	לצאת	verb, pattern=pa3al
 get undressed	להתפשט	verb, pattern=hitpa3el, root=פשט
 get up	לקום	verb, pattern=pa3al, root=קום
+gild	להזהיב	verb, pattern=hif3il, root=זהב
 give	לתת	verb, pattern=pa3al, root=נתן
 give birth	ללדת	verb, pattern=pa3al, root=ילד
 give up	לוותר	verb, pattern=pi3el, root=ותר
@@ -160,6 +174,7 @@ glorify	לשבח	verb, pattern=pi3el, root=שבח
 glue	להדביק	verb, pattern=hif3il, root=דבק
 go	ללכת	verb, pattern=pa3al, root=הלך
 guess	לנחש	verb, pattern=pi3el
+guide	להנחות	verb, pattern=hif3il, root=נחה
 halt	לעצור	verb, pattern=pa3al
 hand over	להגיש	verb, pattern=hif3il, root=נגש
 hang	לתלות	verb, pattern=pa3al
@@ -169,6 +184,7 @@ hear	לשמוע	verb, pattern=pa3al
 hold	להחזיק	verb, pattern=hif3il
 hope	לקוות	verb, pattern=pi3el, root=קוה
 hide	להתחבא	verb, pattern=hitpa3el
+honk	לגעגע	verb, pattern=pi3el, root=געגע, descriprion="geese"
 honor	להדור	verb, pattern=pa3al, root=הדר
 honor	לכבד	verb, pattern=pi3el, root=כבד
 honour	להדור	verb, pattern=pa3al, root=הדר
@@ -182,6 +198,7 @@ ignite	להדליק	verb, pattern=hif3il
 imagine	לדמיין	verb, pattern=pi3el, root=דמין
 improve	להשביח	verb, pattern=hif3il, root=שבח
 increase	להגדיל	verb, pattern=hif3il
+instruct	להנחות	verb, pattern=hif3il, root=נחה
 intend	להתכוון	verb, pattern=hitpa3el, root=כון
 intensify	להעצים	verb, pattern=hif3il
 introduce	להציג	verb, pattern=hif3il
@@ -190,6 +207,7 @@ join	להצטרף	verb, pattern=hitpa3el
 jump	לקפוץ	verb, pattern=pa3al
 kill	להרוג	verb, pattern=pa3al
 know	לדעת	verb, pattern=pa3al, root=ידע
+lead	להנחות	verb, pattern=hif3il, root=נחה
 lead a dance	להרקיד	verb, pattern=hif3il, root=רקד
 leave	לעזוב	verb, pattern=pa3al
 let	לאפשר	verb, pattern=pi3el
@@ -199,9 +217,10 @@ listen	להקשיב	verb, pattern=hif3il
 live	לחיות	verb, pattern=pa3al
 live	לגור	verb, pattern=pa3al, root=גור, description="live in a location"
 load	לטעון	verb, pattern=pa3al
-long for	להתגעגע	verb, pattern=hitpa3el, root=געגע
-look	להסתכל	verb, pattern=hitpa3el, [look at]
-look	להיראות	verb, pattern=nif3al, [look like]
+long for	להתגעגע	verb, pattern=hitpa3el, root=געגע, description="used with ל-"
+long for	להיכסף	verb, pattern=nif3al, root=כסף, description="used with ל-"
+look	להסתכל	verb, pattern=hitpa3el, description="look at"
+look	להיראות	verb, pattern=nif3al, description="look like"
 look forward to	לצפות	verb, pattern=pi3el
 love	לאהוב	verb, pattern=pa3al, root=אהב
 lust	לחמוד	verb, pattern=pa3al, root=חמד
@@ -213,8 +232,11 @@ make accessible	להנגיש	verb, pattern=hif3il, root=נגש
 make dance	להרקיד	verb, pattern=hif3il, root=רקד, desription="make sb dance"
 make equal	להשוות	verb, pattern=hif3il, root=שוה
 make possible	לאפשר	verb, pattern=pi3el
+make sign	להחתים	verb, pattern=hif3il, root=חתם
 make stronger	להתעצם	verb, pattern=hitpa3el
+make sure	לוודא	verb, pattern=pi3el, root=ודא
 make true	לקיים	verb, pattern=pi3el, root=קים
+make work	להעביד	verb, pattern=hif3il, root=עבד
 manage	להסתדר	verb, pattern=hitpa3el
 manufacture	לייצר	verb, pattern=pi3el, root=יצר
 match	לשוות	verb, pattern=pa3al, root=שוה
@@ -224,12 +246,15 @@ meet	להפגש	verb, pattern=nif3al
 mention	להזכיר	verb, pattern=hif3il
 miss	להתגעגע	verb, pattern=hitpa3el, root=געגע, description="miss smn"
 miss	להחמיץ	verb, pattern=hif3il, description="miss e.g. a chance/opportunity"
+mortgage	לשעבד	verb, finance, pattern=pi3el, root=שעבד
 move	להזיז	verb, pattern=hif3il
 move past	לחלוף	verb, pattern=pa3al
 neglect	להזניח	verb, pattern=hif3il
 obey	לציית	verb, pattern=pi3el, root=צית
 obtain	להשיג	verb, pattern=hif3il
-open	לפתוח	verb, pattern=pa3al
+obtain a signature	להחתים	verb, pattern=hif3il, root=חתם
+open	לפתוח	verb, pattern=pa3al, root=פתח
+operate	לעבוד	verb, pattern=pa3al, root=עבד
 order	להזמין	verb, pattern=pa3al, root=זמן
 pass	לעבור	verb, pattern=pa3al
 pass away	לחלוף	verb, pattern=pa3al
@@ -238,11 +263,13 @@ pay	לשלם	verb, pattern=pi3el
 perform	לבצע	verb, pattern=pi3el
 play	לשחק	verb, pattern=pi3el
 play music	לנגן	verb, pattern=pi3el
+pledge	לשעבד	verb, pattern=pi3el, root=שעבד
 praise	להדר	verb, pattern=pi3el, root=הדר
 praise	לשבח	verb, pattern=pi3el, root=שבח
 pray	להתפלל	verb, pattern=hitpa3el
 predict	לצפות	verb, pattern=pa3al
 present	להציג	verb, pattern=hif3il
+process	לעבד	verb, pattern=pi3el, root=עבד
 produce	לייצר	verb, pattern=pi3el, root=יצר
 publicize	לפרסם	verb, pattern=pi3el, root=פרסם
 publish	לפרסם	verb, pattern=pi3el, root=פרסם
@@ -287,6 +314,7 @@ save	לשמור	verb, pattern=pa3al
 say	לומר	verb, pattern=pa3al
 scatter	להפיץ	verb, pattern=hif3il, root=פוץ
 scream	לצעוק	verb, pattern=pa3al
+seal	לחתום	verb, pattern=pa3al, root=חתם
 search	לחפש	verb, pattern=pi3el
 seek	לחפש	verb, pattern=pi3el
 see	לראות	verb, pattern=pa3al
@@ -305,9 +333,11 @@ show	להציג	verb, pattern=hif3il
 shrink	לכווץ	verb, pattern=pi3el
 shut	לסגור	verb, pattern=pa3al
 shut	לעצום	verb, pattern=pa3al
-sing	לשיר	verb, pattern=pa3al
+sign	לחתום	verb, pattern=pa3al, root=חתם
+silver-plate	להכסיף	verb, pattern=hif3il, root=כסף
 simplify	לפשט	verb, pattern=pi3el, root=פשט
 sin	לחטוא	verb, pattern=pa3al
+sing	לשיר	verb, pattern=pa3al
 sit	לשבת	verb, pattern=pa3al, root=ישב
 slash	לחתוך	verb, pattern=pa3al
 sleep	לישון	verb, pattern=pa3al
@@ -357,7 +387,10 @@ warn	להזהיר	verb, pattern=hif3il
 win	לנצח	verb, pattern=pi3el
 wish	לאחל	verb, pattern=pi3el
 withstand	להתמודד	verb, pattern=hitpa3el, root=מדד
-work	לעבוד	verb, pattern=pa3al
+work	לעבוד	verb, work, pattern=pa3al, root=עבד
 work out	להסתדר	verb, pattern=hitpa3el
+work upon	לעבד	verb, pattern=pi3el, root=עבד
 write	לכתוב	verb, pattern=pa3al
-yearn	להתגעגע	verb, pattern=hitpa3el, root=געגע, description="used with ל-"
+yearn	להתגעגע	verb, pattern=hitpa3el, root=געגע
+yearn	להיכסף	verb, pattern=nif3al, root=כסף
+
