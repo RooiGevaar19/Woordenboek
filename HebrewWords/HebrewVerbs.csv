@@ -43,6 +43,7 @@ be silent	לשתוק	verb, pattern=pa3al
 be similar	להידמות	verb, pattern=nif3al, root=דמה
 be sorry	להצטער	verb, pattern=hitpa3el
 be true	להיכון	verb, pattern=nif3al, root=כון
+be unworthy	לקטון	verb, pattern=pa3al, root=קטן
 be visible	להיראות	verb, pattern=nif3al, root=ראה
 be worth	לשוות	verb, pattern=pa3al, root=שוה
 be wrong	לטעות	verb, pattern=pa3al
@@ -116,6 +117,8 @@ delay	לעכב	verb, pattern=pi3el
 deny	להכחיש	verb, pattern=hif3il
 determine	לקובע	verb, pattern=pa3al, root=קבע
 die	למות	verb, pattern=pa3al, root=מות
+diminish	לקטון	verb, pattern=pa3al, root=קטן
+diminish	להקטין	verb, pattern=hif3il, root=קטן
 direct	לכוון	verb, pattern=pi3el, root=כון
 direct	להנחות	verb, pattern=hif3il, root=נחה
 display	להציג	verb, pattern=hif3il
