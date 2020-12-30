@@ -7,6 +7,7 @@ bad	רע	adjective
 barefoot	יחף	adjective
 beautiful	יפה	adjective
 belonging	שייך	adjective, description="belonging to smn/smth"
+big	גדול	adjective, root=גדל, pattern=katol
 bitter	מר	adjective
 bright	בהיר	adjective
 certain	ודאי	adjective, root=ודא
@@ -46,6 +47,7 @@ free	חופשי	adjective, description="about liberty"
 funny	מצחיק	adjective
 good	טוב	adjective
 great	נאדר	adjective, root=אדר, pattern=niktal
+great	גדול	adjective, root=גדל, pattern=katol
 happy	שמח	adjective
 happy	מאושר	adjective
 heavy	כבד	adjective, root=כבד, pattern=katel, description="about weight"
@@ -57,6 +59,7 @@ impossible	בלתי אפשרי	adjective
 intelligent	נבון	adjective, root=בין, pattern=niktal
 joint	משותף	adjective
 known	ידוע	adjective
+large	גדול	adjective, root=גדל, pattern=katol
 last	אחרון	adjective
 late	מאוחר	adjective
 lawful	כדין	adjective

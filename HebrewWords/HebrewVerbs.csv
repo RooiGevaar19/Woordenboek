@@ -64,6 +64,7 @@ break down	להישבר	verb, pattern=nif3al, root=שבר
 breathe	לנשום	verb, pattern=pa3al, root=נשם
 brew	להתבשל	verb, pattern=hitpa3el, root=בשל
 bring	להביא	verb, pattern=hif3il
+bring up	לגדל	verb, pattern=pi3el, root=גדל
 build	להקים	verb, pattern=hif3il, root=קום
 buy	לקנות	verb, pattern=pa3al
 cackle	לגעגע	verb, pattern=pi3el, root=געגע
@@ -141,6 +142,7 @@ estabilish	להקים	verb, pattern=hif3il, root=קום
 esteem	להחשיב	verb, pattern=hif3il, root=חשב
 execute	לבצע	verb, pattern=pi3el, root=בצע, description="execute smth"
 exit	לצאת	verb, pattern=pa3al, root=יצא
+expand	להגדיל	verb, pattern=hif3il, root=גדל
 extend	להרחיב	verb, pattern=hif3il
 extend	להתפשט	verb, pattern=hitpa3el
 expect	לצפות	verb, pattern=pi3el
@@ -176,6 +178,8 @@ give up	לוותר	verb, pattern=pi3el, root=ותר
 glorify	לשבח	verb, pattern=pi3el, root=שבח
 glue	להדביק	verb, pattern=hif3il, root=דבק
 go	ללכת	verb, pattern=pa3al, root=הלך
+grow	לגדול	verb, pattern=pa3al, root=גדל
+grow	לגדל	verb, pattern=pi3el, root=גדל
 guess	לנחש	verb, pattern=pi3el
 guide	להנחות	verb, pattern=hif3il, root=נחה
 halt	לעצור	verb, pattern=pa3al
@@ -200,7 +204,8 @@ identify	לזהות	verb, pattern=pi3el
 ignite	להדליק	verb, pattern=hif3il
 imagine	לדמיין	verb, pattern=pi3el, root=דמין
 improve	להשביח	verb, pattern=hif3il, root=שבח
-increase	להגדיל	verb, pattern=hif3il
+increase	לגדול	verb, pattern=pa3al, root=גדל
+increase	להגדיל	verb, pattern=hif3il, root=גדל
 instruct	להנחות	verb, pattern=hif3il, root=נחה
 intend	להתכוון	verb, pattern=hitpa3el, root=כון
 intensify	להעצים	verb, pattern=hif3il
